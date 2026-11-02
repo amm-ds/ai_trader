@@ -31,6 +31,7 @@ class TradeSignal:
     written_trigger: str
     conditions: tuple[str, ...]
     target_price: float | None = None
+    size_multiplier: float = 1.0
 
 
 class BandRejectionStrategy:

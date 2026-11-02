@@ -370,7 +370,7 @@ class Backtester:
         signal: TradeSignal, timestamp: datetime, equity: float, risk_fraction: float
     ) -> OrderIntent:
         stop_distance = abs(signal.entry_price - signal.stop_price)
-        quantity = equity * risk_fraction / stop_distance
+        quantity = equity * risk_fraction * signal.size_multiplier / stop_distance
         return OrderIntent(
             symbol=signal.symbol,
             side=signal.side,

@@ -1,0 +1,3215 @@
+{
+  "benchmark": {
+    "agreement_rate": 0.9666666666666667,
+    "invalid_json_rate": 0.0,
+    "latency_mean_s": 56.75346110270281,
+    "latency_median_s": 53.299056229006965,
+    "latency_p95_s": 87.30628684794645,
+    "snapshots": 60,
+    "tokens": 141501,
+    "tokens_per_second": 41.554293855880566
+  },
+  "counterfactual": {
+    "quant_only": {
+      "expectancy_r": 0.0,
+      "max_drawdown": 0.0,
+      "profit_factor": 0.0,
+      "sharpe_daily": 0.0,
+      "trades": 0
+    },
+    "quant_plus_llm": {
+      "expectancy_r": 0.0,
+      "max_drawdown": 0.0,
+      "profit_factor": 0.0,
+      "sharpe_daily": 0.0,
+      "trades": 0
+    }
+  },
+  "decisions": [
+    {
+      "action": "flat",
+      "confidence": 0.25,
+      "fallback": false,
+      "latency_s": 57.16302433301462,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Aggressive sell flow and bearish regime conflict with bullish model probability. Indecision warrants flat.",
+      "tokens": 2175,
+      "tokens_per_second": 38.04907149994554,
+      "uncertainty": "Strong flow-model divergence amid transitioning regime increases noise."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.92,
+      "fallback": false,
+      "latency_s": 53.34325983299641,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates block entry; conflicting signals between bullish model and bearish flow/regime require capital preservation.",
+      "tokens": 2189,
+      "tokens_per_second": 41.036112282098586,
+      "uncertainty": "Low timeframe agreement; transition regime reduces signal reliability."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.58,
+      "fallback": false,
+      "latency_s": 54.984071790997405,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Sell-side flow dominates (signed vol z -2.89). Regime is bearish transition with weak alignment. Quant gates enforce flat. Model favors up 57% but lacks confirmation.",
+      "tokens": 2167,
+      "tokens_per_second": 39.411413695171355,
+      "uncertainty": "Transitional regime and conflicting model/flow signals create entry noise."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.65,
+      "fallback": false,
+      "latency_s": 62.18710250000004,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Bearish flow (neg CVD/OFI) and transition regime dominate. Model up signal conflicts but lacks conviction. Quant gates enforce flat.",
+      "tokens": 2397,
+      "tokens_per_second": 38.5449699959891,
+      "uncertainty": "Model-flow divergence during regime shift creates entry ambiguity."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.82,
+      "fallback": false,
+      "latency_s": 72.16747045802185,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates active; negative CVD & bearish transition regime override model's slight UP bias, justifying flat.",
+      "tokens": 2832,
+      "tokens_per_second": 39.24205714882731,
+      "uncertainty": "Divergence between model's UP bias and execution gates creates directional ambiguity."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.43,
+      "fallback": false,
+      "latency_s": 93.52263983304147,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong negative flow and bearish regime override slight model up bias. Low timeframe alignment supports flat to avoid transition whipsaw.",
+      "tokens": 3645,
+      "tokens_per_second": 38.97452003608034,
+      "uncertainty": "Conflicting microstructure signals and regime transition create direction noise."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.32,
+      "fallback": false,
+      "latency_s": 59.79207479098113,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong negative CVD/volume and bear regime suggest downside, but model leans up weakly. Conflicting signals warrant flat.",
+      "tokens": 2322,
+      "tokens_per_second": 38.83457812957921,
+      "uncertainty": "Model vs flow conflict; quant gates active; low alignment."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 61.93783416697988,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates enforced flat; bearish flow conflicts with slight model lean. Transition regime near evening bell increases whipsaw risk.",
+      "tokens": 2200,
+      "tokens_per_second": 35.51948545809594,
+      "uncertainty": "Conflicting indicators and hard quant gates reduce conviction, validating neutral stance."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.6,
+      "fallback": false,
+      "latency_s": 46.21627608401468,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Conflicting model up bias vs strong negative flow momentum in transitional regime. Quant gate active favors flat until alignment.",
+      "tokens": 1758,
+      "tokens_per_second": 38.038547216660284,
+      "uncertainty": "Regime shift and mixed signals create high decision uncertainty."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.62,
+      "fallback": false,
+      "latency_s": 71.49434741702862,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Dominant sell flow (-2.57Z vol) contrasts with model upside bias. Bearish transition regime plus low alignment favors flat to avoid evening bell whipsaws.",
+      "tokens": 2696,
+      "tokens_per_second": 37.7092748923793,
+      "uncertainty": "Flow sells oppose model longs; transition regime lacks clarity, risking whipsaws near close."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.82,
+      "fallback": false,
+      "latency_s": 51.54168020898942,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gate blocks entry; flow metrics and bear transition outweigh bullish model signal.",
+      "tokens": 2108,
+      "tokens_per_second": 40.89893832433391,
+      "uncertainty": "Transition regime creates noise; volume insufficient for conviction"
+    },
+    {
+      "action": "flat",
+      "confidence": 0.65,
+      "fallback": false,
+      "latency_s": 64.46143454196863,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Conflicting model up bias vs strong negative flow; regime in transition with low alignment; quant gates enforce flatting despite marginal edge.",
+      "tokens": 2738,
+      "tokens_per_second": 42.47500880883099,
+      "uncertainty": "High near-term volatility, weak trend alignment, and opposing order flow create signal ambiguity."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.85,
+      "fallback": false,
+      "latency_s": 48.050076207960956,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Range regime with mixed flow signals; quant gates enforce flat status despite slight model uptrend bias.",
+      "tokens": 2135,
+      "tokens_per_second": 44.43281194310099,
+      "uncertainty": "Conflicting order flow and low expected volatility complicate trend confirmation."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.7,
+      "fallback": false,
+      "latency_s": 38.14582329202676,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model predicts up but regime transitions bear with sharp negative CVD. High trade volume indicates noise. Quant gates blocked entry. Hold flat.",
+      "tokens": 1682,
+      "tokens_per_second": 44.09394934599751,
+      "uncertainty": "Conflicting momentum, elevated volatility, and structural transition limit directional conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.45,
+      "fallback": false,
+      "latency_s": 58.02477025002008,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model up prob 0.54 misses threshold. CVD steeply negative conflicts with OFI. Regime transitional/bearish + quant gates block entry.",
+      "tokens": 2456,
+      "tokens_per_second": 42.3267509620023,
+      "uncertainty": "Regime shift with high volatility and conflicting flow signals create entry ambiguity."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.15,
+      "fallback": false,
+      "latency_s": 50.61183287500171,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model leans long but regime warns transition. Strong CVD offsets weak OFI. Quant gates enforce flat due to low conviction and risk limits.",
+      "tokens": 2272,
+      "tokens_per_second": 44.89068802568876,
+      "uncertainty": "Transition regime, mixed flows, and quant gate suppress directional confidence."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.42,
+      "fallback": false,
+      "latency_s": 47.635559000016656,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model favors long but strong bearish flow and transition regime conflict. Quant gate confirms caution; flat avoids whipsaw.",
+      "tokens": 2233,
+      "tokens_per_second": 46.87674600395094,
+      "uncertainty": "Divergent model/flow signals, transition regime, quant activation."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 54.529485292034224,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model projects long but negative CVD slope and range regime indicate low momentum. Risk gates enforce flat due to conflicting signals.",
+      "tokens": 2506,
+      "tokens_per_second": 45.95678808591435,
+      "uncertainty": "Mixed flow metrics and gating rules prevent directional conviction despite model uptick."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.72,
+      "fallback": false,
+      "latency_s": 115.28483716596384,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Regime is RANGE with neutral direction. Quant gates reject entry despite slightly bullish model skew. Awaiting breakout confirmation before risking capital.",
+      "tokens": 5178,
+      "tokens_per_second": 44.91483986350921,
+      "uncertainty": "Range volatility risks false breakouts; conflicting regime outweighs slight bullish flow skew."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 73.80463000002783,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Regime labels RANGE with zero aligned timeframes, overriding marginally bullish model probabilities. Quant gates block entry amid ambiguous flow.",
+      "tokens": 3119,
+      "tokens_per_second": 42.260221343821165,
+      "uncertainty": "Margins between prediction classes are narrow. Mixed CVD/OFI signals limit directional clarity."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 50.62486020801589,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "RANGE regime, neutral direction. Conflicting flow & marginal model edge lack conviction. Quant gates block entry on risk filters.",
+      "tokens": 2108,
+      "tokens_per_second": 41.63962115328906,
+      "uncertainty": "High chop, conflicting order flow, unaligned timeframes past liquidity window."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 53.25485262501752,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Flow & regime diverge from model; quant-gates enforce neutrality during transition. Signal conflict favors flattening.",
+      "tokens": 2309,
+      "tokens_per_second": 43.357551212437336,
+      "uncertainty": "Regime shift creates conflicting signals; flow pressure undermines prediction reliability."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 50.105800791992806,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gate blocks entry; model probs < threshold; negative flow conflicts with slight up bias; low timeframe alignment favors inaction.",
+      "tokens": 2227,
+      "tokens_per_second": 44.445951662265166,
+      "uncertainty": "Conflicting flow vs model signals; regime transition state reduces conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.9,
+      "fallback": false,
+      "latency_s": 42.02383387496229,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates block entry. Model shows low conviction near threshold with conflicting flows. Flat preserves capital during TRANSITION regime.",
+      "tokens": 1938,
+      "tokens_per_second": 46.11668715820467,
+      "uncertainty": "Low directional confidence, active risk constraints, transitional market state."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.65,
+      "fallback": false,
+      "latency_s": 43.902798791998066,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Regime neutral; strong selling flow conflicts with model; high volume lacks conviction. Staying flat manages range risk.",
+      "tokens": 2020,
+      "tokens_per_second": 46.01073406664394,
+      "uncertainty": "Conflicting signal sources and low trend alignment make reversal timing unpredictable."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 45.96736716700252,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Regime is neutral range with zero aligned timeframes. Conflicting model signals (~41% vs ~53%) show low edge. Quant gates and shallow flow favor caution. Flat avoids whipsaw risk.",
+      "tokens": 2086,
+      "tokens_per_second": 45.38001909966743,
+      "uncertainty": "Low volatility range regime and zero timeframe alignment create ambiguous directional cues."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.32,
+      "fallback": false,
+      "latency_s": 42.77026341605233,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates rejected signal despite marginal bearish lean. Mixed flow (rising CVD vs weak volume) and transitioning regime limit conviction. Staying flat is prudent.",
+      "tokens": 1971,
+      "tokens_per_second": 46.08341970744687,
+      "uncertainty": "Low model move, conflicting flow metrics, and transition phase reduce reliability."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.42,
+      "fallback": false,
+      "latency_s": 46.01666683296207,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model favors long but strong negative signed volume and range regime conflict with trend signal. Quant gates flat due to misaligned inputs.",
+      "tokens": 2089,
+      "tokens_per_second": 45.39659527238149,
+      "uncertainty": "Mixed directional bias vs liquidity pressure; low trend alignment creates false breakout risk."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.35,
+      "fallback": false,
+      "latency_s": 48.51528699998744,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model favors shorts >52% vs threshold, but zero aligned timeframes, flat regime, and quant gates indicate low-conviction range trading.",
+      "tokens": 2162,
+      "tokens_per_second": 44.5632734276221,
+      "uncertainty": "Range regime and gate block contradict down signal, reducing edge reliability."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 57.404838583024684,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Conflicting signals: model leans long but flows show persistent selling. Regime is neutral range with zero aligned timeframes. No directional conviction warrants inaction.",
+      "tokens": 2555,
+      "tokens_per_second": 44.50844324393841,
+      "uncertainty": "Range regime lacks alignment; flow-model divergence lowers directional conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 42.85359679098474,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model favors upside but strong negative flows, OFI, and bearish regime override signal. Quant gates flat due to conflicting pressure.",
+      "tokens": 1892,
+      "tokens_per_second": 44.1503197322757,
+      "uncertainty": "Volatile transition phase with opposing model probability and order flow metrics."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.6,
+      "fallback": false,
+      "latency_s": 44.615815291996114,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Negative CVD and OFI contradict model up-probability. Transitional regime favors patience over directional bets.",
+      "tokens": 1905,
+      "tokens_per_second": 42.69786369547188,
+      "uncertainty": "Flow-model divergence and volatile trade count reduce conviction on breakout or reversal."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.6,
+      "fallback": false,
+      "latency_s": 42.99116591695929,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Range regime and quant gate advise waiting. Conflicting flow signals (neg CVD, pos OFI) plus low expected move justify holding cash.",
+      "tokens": 1880,
+      "tokens_per_second": 43.729914271954456,
+      "uncertainty": "Model slightly favors up but regime filter and mixed microprice metrics dampen conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.85,
+      "fallback": false,
+      "latency_s": 52.48684270796366,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong sell volume clashes with model bias. Proximity to evening bell triggers protective risk gates, mandating flat.",
+      "tokens": 2265,
+      "tokens_per_second": 43.153672104120275,
+      "uncertainty": "Conflicting signals; session transition reduces reliability."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.15,
+      "fallback": false,
+      "latency_s": 50.5889339580317,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model favors long (0.52) but regime is neutral range with conflicting flow. Zero aligned timeframes and quant gate justify staying flat.",
+      "tokens": 2243,
+      "tokens_per_second": 44.33775975316618,
+      "uncertainty": "Mixed order flow, low alignment, and neutral regime create choppy conditions requiring caution."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 49.88132337498246,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates enforce flat; range regime and negative order flow contradict weak model long bias. Capital preservation optimal.",
+      "tokens": 2244,
+      "tokens_per_second": 44.98677757866903,
+      "uncertainty": "Model-flow divergence and range regime limit directional conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.65,
+      "fallback": false,
+      "latency_s": 38.11341650004033,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates enforce flat. Regime is bear transition with weak alignment. Negative flow contradicts model upside bias.",
+      "tokens": 1660,
+      "tokens_per_second": 43.55421666273984,
+      "uncertainty": "Microstructure signals clash. Evening volatility and low timeframe alignment increase noise."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.35,
+      "fallback": false,
+      "latency_s": 51.595933875010815,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gate enforces flat. Regime is neutral range with zero alignment. Negative flow contradicts model's slight bullish lean near threshold.",
+      "tokens": 2288,
+      "tokens_per_second": 44.344579662858564,
+      "uncertainty": "Conflicting micro signals, low timeframe alignment, and gating rules limit directional conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.3,
+      "fallback": false,
+      "latency_s": 45.747293917054776,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Conflicting signals: model favors up but strong negative flow contradicts. Quant gates block entry. Transition regime limits conviction.",
+      "tokens": 2051,
+      "tokens_per_second": 44.83325295084567,
+      "uncertainty": "High model-flow divergence and low regime alignment reduce reliability."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 52.10121358302422,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Bearish CVD and OFI show recent selling, but exhaustion at 3.9Z trades signals pause. Regime is transitioning with weak alignment. Quant gates enforce flat.",
+      "tokens": 2412,
+      "tokens_per_second": 46.294507058965806,
+      "uncertainty": "Transition regime with conflicting flow signals and split model probabilities warrants caution."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.65,
+      "fallback": false,
+      "latency_s": 42.34504954202566,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gate blocks entry. Strong negative signed volume (-4.39z) and bearish CVD slope contradict marginally higher model up prob. Regime transition warrants caution.",
+      "tokens": 1940,
+      "tokens_per_second": 45.81409210714543,
+      "uncertainty": "Model-flow divergence during regime shift; unclear if up edge is valid or liquidity grab."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.65,
+      "fallback": false,
+      "latency_s": 61.98219737497857,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Range regime with neutral direction and zero aligned timeframes reduces trend edge. Conflicting order flow vs model. Low expected move supports waiting.",
+      "tokens": 2844,
+      "tokens_per_second": 45.88414287403252,
+      "uncertainty": "Range bound chop may fake out breakout or reversal attempts."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.72,
+      "fallback": false,
+      "latency_s": 49.242154749983456,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates override model due to conflicting flow/microprice signals and low-aligned transition regime. Maintain flat.",
+      "tokens": 2354,
+      "tokens_per_second": 47.804569315699794,
+      "uncertainty": "Regime transition label and mixed flow indicators reduce directional conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.7,
+      "fallback": false,
+      "latency_s": 41.09624654101208,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates restrict trading despite slight model up bias; flow is bearish; regime confirms range with no timeframe alignment.",
+      "tokens": 1894,
+      "tokens_per_second": 46.08693395173886,
+      "uncertainty": "Model-up vs bearish flow conflict; quant gates enforce flat; range regime lacks alignment."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 54.51854233298218,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Heavy sell flow and transition regime clash with model bias. Low volatility and gates support flat stance.",
+      "tokens": 2371,
+      "tokens_per_second": 43.48979078565004,
+      "uncertainty": "Conflicting signals, low regime alignment, and gates cause entry noise."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.4,
+      "fallback": false,
+      "latency_s": 111.95642004202818,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Conflicting flow and model signals in a transitional regime with low expected move. Quant gates enforce flat.",
+      "tokens": 4439,
+      "tokens_per_second": 39.6493564043367,
+      "uncertainty": "Regime transition, weak alignment, and quant restrictions block conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.65,
+      "fallback": false,
+      "latency_s": 57.26568574999692,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Conflicting model vs flow in TRANSITION regime. Negative CVD/OFI bearish, model leans up. Approaching evening bell and low alignment justify caution. Flat preserves capital.",
+      "tokens": 2126,
+      "tokens_per_second": 37.12519936077277,
+      "uncertainty": "Model/flow divergence and transitional regime create directional ambiguity near daily close."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.85,
+      "fallback": false,
+      "latency_s": 56.49355620803544,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates block entry. Bearish regime and negative CVD contradict model long bias. Approaching evening bell warrants caution.",
+      "tokens": 2136,
+      "tokens_per_second": 37.80962189978373,
+      "uncertainty": "Regime transition may quickly resolve; momentum shifts could trigger whipsaw."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.42,
+      "fallback": false,
+      "latency_s": 60.344653750013094,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong sell flow conflicts with model's 67% up prob. Regime signals bearish transition. Low alignment and quant gates block entries. Flat minimizes cross-signal error.",
+      "tokens": 2267,
+      "tokens_per_second": 37.567536792760336,
+      "uncertainty": "Model-flow divergence and regime transition reduce directional clarity."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.48,
+      "fallback": false,
+      "latency_s": 50.57472633296857,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model favors long but short-term flows and transition regime show selling pressure. Position already flat; quant gate approves hold.",
+      "tokens": 2051,
+      "tokens_per_second": 40.553852659465555,
+      "uncertainty": "Regime transition and divergent order flow create direction uncertainty."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.42,
+      "fallback": false,
+      "latency_s": 52.62212733301567,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong sell flow and transitional regime conflict with model's upward bias. Quant risk gates block entry during high volatility.",
+      "tokens": 2051,
+      "tokens_per_second": 38.97599933618004,
+      "uncertainty": "Regime switch risk and elevated volume create conflicting cues; quant constraints active."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.8,
+      "fallback": false,
+      "latency_s": 57.99883283401141,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Quant gates block approval. Flow is negative and regime is bearish transition, overriding moderate model upside bias.",
+      "tokens": 2249,
+      "tokens_per_second": 38.77664239272677,
+      "uncertainty": "Hard quant veto and low alignment neutralize conflicting long probability."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.62,
+      "fallback": false,
+      "latency_s": 65.66707683296409,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong negative flow and transitional bear regime contradict bullish model. Quant gate blocks entry. Preserve capital amid conflicting signals.",
+      "tokens": 2283,
+      "tokens_per_second": 34.766280305231454,
+      "uncertainty": "Conflicting flow vs model bias; regime transition limits short-term conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.55,
+      "fallback": false,
+      "latency_s": 56.10949633299606,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong negative flow and transition regime contradict upward model bias. Quant gates block entry. Maintain flat position.",
+      "tokens": 2052,
+      "tokens_per_second": 36.5713494881844,
+      "uncertainty": "Conflicting signals limit conviction during regime transition."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.75,
+      "fallback": false,
+      "latency_s": 57.18935962498654,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong bearish flow contradicts model's up bias. Quant gate unapproved. Preserving capital near session close is prudent.",
+      "tokens": 2003,
+      "tokens_per_second": 35.023997700524546,
+      "uncertainty": "Divergence between macro model and microflow signals reduces edge confidence."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.42,
+      "fallback": false,
+      "latency_s": 62.05705770797795,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Extreme negative flow (CVD/signed vol z<-4) and bear transition regime contradict model's marginal up signal (prob 0.58). High volatility warrants flat.",
+      "tokens": 2276,
+      "tokens_per_second": 36.67592509316473,
+      "uncertainty": "Conflicting directional signals and regime shift increase whipsaw risk, capping conviction."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.4,
+      "fallback": false,
+      "latency_s": 57.20951779099414,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Model leans long (0.58) but bearish CVD/OFI and TRANSITION regime contradict it. High volatility and gating risks justify flat.",
+      "tokens": 2164,
+      "tokens_per_second": 37.82587379788498,
+      "uncertainty": "Regime shift and conflicting order flow create ambiguity on short-term direction."
+    },
+    {
+      "action": "short",
+      "confidence": 0.6,
+      "fallback": false,
+      "latency_s": 74.83566654199967,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong negative signed volume (-4.12z) and CVD slope dominate, signaling sustained selling pressure despite model bias.",
+      "tokens": 2838,
+      "tokens_per_second": 37.92309377517527,
+      "uncertainty": "Regime is TRANSITION with weak alignment; conflicting model direction raises false breakout risk."
+    },
+    {
+      "action": "flat",
+      "confidence": 0.42,
+      "fallback": false,
+      "latency_s": 86.97911037504673,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Negative CVD and OFI dominate low-volume flow; transitional regime creates conflicting signals with model bias, justifying caution.",
+      "tokens": 3480,
+      "tokens_per_second": 40.009606731944345,
+      "uncertainty": "Low volume and regime transition amplify noise over clear directional conviction."
+    },
+    {
+      "action": "short",
+      "confidence": 0.65,
+      "fallback": false,
+      "latency_s": 62.259852916002274,
+      "model": "qwen3.6:35b-a3b-q4_K_M",
+      "rationale": "Strong negative flow (-3.9z vol, steep CVD) and bearish transition regime override marginal model upside bias; low expected move justifies directional entry.",
+      "tokens": 2570,
+      "tokens_per_second": 41.27860699361608,
+      "uncertainty": "Model-flow divergence and proximity to evening bell limit trend persistence confidence."
+    }
+  ],
+  "experiment": "llm-local-001",
+  "model": "qwen3.6:35b-a3b-q4_K_M",
+  "snapshot_payloads": [
+    {
+      "as_of": "2022-11-08T19:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -3445.5544999983977,
+        "dollar_volume_z": 2.7687771527848226,
+        "microprice_deviation_ewma": 0.004371847661627355,
+        "ofi_15m": -0.11713778858002585,
+        "signed_volume_z": -4.267283916180336,
+        "trade_count_z": 3.7607104716356354
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.39702869403032465,
+        "expected_move_1h": 0.011267578343498619,
+        "flat": 0.010406865958719704,
+        "threshold": 0.46430441870105815,
+        "up": 0.5925644400109557
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-11-08T19:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2022-11-08T18:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -3171.058500000101,
+        "dollar_volume_z": 3.5200230104268924,
+        "microprice_deviation_ewma": 0.0014471092575172437,
+        "ofi_15m": -0.028468743490099042,
+        "signed_volume_z": -1.125240325078457,
+        "trade_count_z": 4.319763755992374
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.38638296347348705,
+        "expected_move_1h": 0.009483028650275898,
+        "flat": 0.03694132561944969,
+        "threshold": 0.46430441870105815,
+        "up": 0.5766757109070633
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-11-08T18:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2022-11-09T21:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -3572.522499998915,
+        "dollar_volume_z": 1.4782355024585936,
+        "microprice_deviation_ewma": 0.0020124727401498186,
+        "ofi_15m": -0.1231086514591379,
+        "signed_volume_z": -2.886420510356004,
+        "trade_count_z": 1.519882135791121
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.4009295012941549,
+        "expected_move_1h": 0.011498894739241311,
+        "flat": 0.028906767168352585,
+        "threshold": 0.46430441870105815,
+        "up": 0.5701637315374926
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-11-09T21:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2022-11-08T18:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -3219.103250000364,
+        "dollar_volume_z": 3.2333478570394223,
+        "microprice_deviation_ewma": 0.0017317167357513482,
+        "ofi_15m": -0.07597529329530836,
+        "signed_volume_z": -2.8517536019224554,
+        "trade_count_z": 4.041056187142289
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.37921632308186154,
+        "expected_move_1h": 0.008922850600101546,
+        "flat": 0.05480416080574952,
+        "threshold": 0.46430441870105815,
+        "up": 0.5659795161123891
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-11-08T18:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2022-11-09T22:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -3226.7835000014456,
+        "dollar_volume_z": 1.437922403996501,
+        "microprice_deviation_ewma": 0.0030042457774299004,
+        "ofi_15m": -0.06395029423421957,
+        "signed_volume_z": -1.26395167211912,
+        "trade_count_z": 1.901235850651933
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3995585122876416,
+        "expected_move_1h": 0.011678377161905654,
+        "flat": 0.036148123654729455,
+        "threshold": 0.46430441870105815,
+        "up": 0.5642933640576289
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-11-09T22:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2022-09-21T21:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1395.494000000006,
+        "dollar_volume_z": 0.8359918797250521,
+        "microprice_deviation_ewma": 0.000436306034951502,
+        "ofi_15m": -0.13740945644173475,
+        "signed_volume_z": -2.923283188794469,
+        "trade_count_z": 0.5105952529204953
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.40027727724110856,
+        "expected_move_1h": 0.0059053418767476655,
+        "flat": 0.03610485215376173,
+        "threshold": 0.46430441870105815,
+        "up": 0.5636178706051297
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-09-21T21:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2022-11-09T18:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -2139.6102499986882,
+        "dollar_volume_z": 1.4785683557989557,
+        "microprice_deviation_ewma": 0.0015148762602282691,
+        "ofi_15m": -0.11623308973761977,
+        "signed_volume_z": -2.6369108733622086,
+        "trade_count_z": 1.6789903686621823
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.40027727724110856,
+        "expected_move_1h": 0.01158799153309123,
+        "flat": 0.03610485215376173,
+        "threshold": 0.46430441870105815,
+        "up": 0.5636178706051297
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-11-09T18:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2022-11-08T19:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1506.920249998453,
+        "dollar_volume_z": 0.6731530276912379,
+        "microprice_deviation_ewma": 0.0025377633781935426,
+        "ofi_15m": -0.023396700455478064,
+        "signed_volume_z": -0.1503636479270016,
+        "trade_count_z": 1.08242328981674
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.40517809459521925,
+        "expected_move_1h": 0.01069700782307458,
+        "flat": 0.03580981032978552,
+        "threshold": 0.46430441870105815,
+        "up": 0.5590120950749952
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-11-08T19:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2022-09-21T20:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -527.0247499997495,
+        "dollar_volume_z": 0.1557056144685068,
+        "microprice_deviation_ewma": -8.228769036608717e-05,
+        "ofi_15m": -0.11437156489926427,
+        "signed_volume_z": -1.464600647616356,
+        "trade_count_z": 0.06227176745796165
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.410139114839308,
+        "expected_move_1h": 0.0056781215177397135,
+        "flat": 0.03624826738448026,
+        "threshold": 0.46430441870105815,
+        "up": 0.5536126177762116
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-09-21T20:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-03-14T19:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1912.088750000199,
+        "dollar_volume_z": 0.7770112790159092,
+        "microprice_deviation_ewma": 0.0015191683220368611,
+        "ofi_15m": -0.1488426472518399,
+        "signed_volume_z": -2.574070620766657,
+        "trade_count_z": 0.5187121439554094
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3775410371058039,
+        "expected_move_1h": 0.006870094404119,
+        "flat": 0.07117241111603644,
+        "threshold": 0.46430441870105815,
+        "up": 0.5512865517781597
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2023-03-14T19:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-05-15T21:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -28.21025000003283,
+        "dollar_volume_z": -0.8425304779772068,
+        "microprice_deviation_ewma": -3.516583967077297e-05,
+        "ofi_15m": -0.04229992752263249,
+        "signed_volume_z": -0.13207032846418612,
+        "trade_count_z": -0.960120177185443
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.25432028307456556,
+        "expected_move_1h": 0.002438171749344491,
+        "flat": 0.19510964343372086,
+        "threshold": 0.46430441870105815,
+        "up": 0.5505700734917135
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2023-05-15T21:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2022-09-06T17:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -5483.951500000054,
+        "dollar_volume_z": 6.889601979408618,
+        "microprice_deviation_ewma": 0.0007027481004672362,
+        "ofi_15m": -0.24843631100381788,
+        "signed_volume_z": -7.657677939369272,
+        "trade_count_z": 7.324214419815178
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.41467751230699984,
+        "expected_move_1h": 0.0035740623018792202,
+        "flat": 0.035969372734835664,
+        "threshold": 0.46430441870105815,
+        "up": 0.5493531149581645
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-1-2022-09-06T17:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-08-17T23:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": 129.71574999712175,
+        "dollar_volume_z": 0.4482957464451524,
+        "microprice_deviation_ewma": 0.0023903588755497087,
+        "ofi_15m": -0.10853154225827279,
+        "signed_volume_z": -0.3242290197293686,
+        "trade_count_z": 0.8317321530799525
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.38539078164628404,
+        "expected_move_1h": 0.006491851791576811,
+        "flat": 0.05886226161248487,
+        "threshold": 0.4168287730171816,
+        "up": 0.5557469567412311
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-2-2023-08-17T23:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-08-17T22:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -4828.239249997598,
+        "dollar_volume_z": 0.974457525807973,
+        "microprice_deviation_ewma": 0.003696748694733508,
+        "ofi_15m": 0.05657128238406089,
+        "signed_volume_z": 0.5780075159691737,
+        "trade_count_z": 2.186909559370335
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.39386212697698525,
+        "expected_move_1h": 0.005405339613944745,
+        "flat": 0.06014462843598496,
+        "threshold": 0.4168287730171816,
+        "up": 0.5459932445870298
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-2-2023-08-17T22:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-08-17T22:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -5148.646249995276,
+        "dollar_volume_z": 2.186340654970436,
+        "microprice_deviation_ewma": 0.004538241252094176,
+        "ofi_15m": 0.012356930695672091,
+        "signed_volume_z": 0.346700395612145,
+        "trade_count_z": 4.130401127308506
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.37378510709910456,
+        "expected_move_1h": 0.004967321723395521,
+        "flat": 0.0877830340849685,
+        "threshold": 0.4168287730171816,
+        "up": 0.538431858815927
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-2-2023-08-17T22:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-08-17T22:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": 1759.2189999977127,
+        "dollar_volume_z": 0.5521144147184377,
+        "microprice_deviation_ewma": 0.0034277497015975894,
+        "ofi_15m": -0.026215669612368153,
+        "signed_volume_z": 0.06142667982504859,
+        "trade_count_z": 1.055408958648198
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.40479317764317496,
+        "expected_move_1h": 0.0060382264456220825,
+        "flat": 0.05994249165816563,
+        "threshold": 0.4168287730171816,
+        "up": 0.5352643306986594
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-2-2023-08-17T22:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-08-17T21:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -7990.362499997485,
+        "dollar_volume_z": 5.948451107583815,
+        "microprice_deviation_ewma": 0.006400907281682747,
+        "ofi_15m": -0.3242687586770298,
+        "signed_volume_z": -7.732130375691963,
+        "trade_count_z": 5.022462876334464
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3556008456758672,
+        "expected_move_1h": 0.00394525756676031,
+        "flat": 0.10974577015654373,
+        "threshold": 0.4168287730171816,
+        "up": 0.5346533841675891
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-2-2023-08-17T21:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-08-18T00:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -694.6000000018976,
+        "dollar_volume_z": -0.17622036036995958,
+        "microprice_deviation_ewma": 0.0017933687326300413,
+        "ofi_15m": -0.016353746266145327,
+        "signed_volume_z": 0.15160376877323375,
+        "trade_count_z": 0.059677917819079156
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3860379668384327,
+        "expected_move_1h": 0.006556375871209435,
+        "flat": 0.08756169936029064,
+        "threshold": 0.4168287730171816,
+        "up": 0.5264003338012766
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-2-2023-08-18T00:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-08-17T23:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": 1142.8307499969378,
+        "dollar_volume_z": 1.4062078682403718,
+        "microprice_deviation_ewma": 0.0025536916300173303,
+        "ofi_15m": 0.10929677938235742,
+        "signed_volume_z": 1.1317258299967963,
+        "trade_count_z": 1.8445934361194354
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.41925568232666827,
+        "expected_move_1h": 0.006242652499273689,
+        "flat": 0.059031400432733395,
+        "threshold": 0.4168287730171816,
+        "up": 0.5217129172405984
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-2-2023-08-17T23:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-08-17T23:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": 881.486999994202,
+        "dollar_volume_z": 0.9725220709418979,
+        "microprice_deviation_ewma": 0.0023093622254395,
+        "ofi_15m": -0.023499437244424284,
+        "signed_volume_z": 0.01974073531236546,
+        "trade_count_z": 1.7471768575865858
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.43054700853041433,
+        "expected_move_1h": 0.006464947417614952,
+        "flat": 0.05985696943939336,
+        "threshold": 0.4168287730171816,
+        "up": 0.5095960220301923
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-2-2023-08-17T23:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2023-08-17T23:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": 135.56324999715434,
+        "dollar_volume_z": 0.4560043065804962,
+        "microprice_deviation_ewma": 0.001929738365271533,
+        "ofi_15m": -0.02644923316446381,
+        "signed_volume_z": 0.059349718092932026,
+        "trade_count_z": 0.7316359532656299
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.44102655615696956,
+        "expected_move_1h": 0.006551839742511476,
+        "flat": 0.06058320000595046,
+        "threshold": 0.4168287730171816,
+        "up": 0.4983902438370799
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-2-2023-08-17T23:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-03-07T22:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -43.05249999999069,
+        "dollar_volume_z": -0.6352713079373011,
+        "microprice_deviation_ewma": 7.440722286092804e-05,
+        "ofi_15m": -0.36198166121556047,
+        "signed_volume_z": -1.2976572405798694,
+        "trade_count_z": -0.7834704304910224
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.27044612256742934,
+        "expected_move_1h": 0.0034280339476608357,
+        "flat": 0.23707156973979762,
+        "threshold": 0.4168287730171816,
+        "up": 0.49248230769277307
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-2-2024-03-07T22:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-03-05T19:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1111.1937500005588,
+        "dollar_volume_z": 0.7127559561173131,
+        "microprice_deviation_ewma": 0.00030516541012128376,
+        "ofi_15m": -0.14550883488422658,
+        "signed_volume_z": -1.8874845645606602,
+        "trade_count_z": 0.5556347028248018
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3890620426696268,
+        "expected_move_1h": 0.008286346424524681,
+        "flat": 0.11925465599633082,
+        "threshold": 0.4168287730171816,
+        "up": 0.4916833013340424
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-2-2024-03-05T19:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-01-10T23:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": 554.8522499999381,
+        "dollar_volume_z": 0.43822167938970935,
+        "microprice_deviation_ewma": -0.0008878282836232749,
+        "ofi_15m": 0.15944575486940898,
+        "signed_volume_z": 2.0333726426890673,
+        "trade_count_z": 0.45280279647130905
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.4904447213767887,
+        "expected_move_1h": 0.005283123886870592,
+        "flat": 0.11896242287827495,
+        "threshold": 0.4168287730171816,
+        "up": 0.3905928557449364
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bull",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-2-2024-01-10T23:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-05T06:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -2478.1585000007763,
+        "dollar_volume_z": 2.3961354027748873,
+        "microprice_deviation_ewma": 0.002691178007211765,
+        "ofi_15m": -0.10622619027918262,
+        "signed_volume_z": -2.9749012761477966,
+        "trade_count_z": 2.797166296747868
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.38689687428832603,
+        "expected_move_1h": 0.010293395138366688,
+        "flat": 0.060067294099668773,
+        "threshold": 0.4083325877087814,
+        "up": 0.5530358316120052
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-3-2024-08-05T06:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-05T13:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -324.01624999922933,
+        "dollar_volume_z": -0.33377712284367134,
+        "microprice_deviation_ewma": 0.0015272782999602914,
+        "ofi_15m": -0.01945345540249326,
+        "signed_volume_z": 0.17610507634442038,
+        "trade_count_z": -0.1187059537370877
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.41309436135971683,
+        "expected_move_1h": 0.013883985216529901,
+        "flat": 0.05750065874160744,
+        "threshold": 0.4083325877087814,
+        "up": 0.5294049798986756
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-3-2024-08-05T13:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-05T21:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": 299.90250000025844,
+        "dollar_volume_z": -0.6562760349537783,
+        "microprice_deviation_ewma": -0.0008693581846519212,
+        "ofi_15m": -0.001701279713543675,
+        "signed_volume_z": 0.18677583667544526,
+        "trade_count_z": -0.6242258241574833
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.5272054347319158,
+        "expected_move_1h": 0.016926302994293138,
+        "flat": 0.14165550287457396,
+        "threshold": 0.4083325877087814,
+        "up": 0.33113906239351026
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bull",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-3-2024-08-05T21:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-05T06:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -537.2827500006533,
+        "dollar_volume_z": 0.8794970640585321,
+        "microprice_deviation_ewma": 0.0022854771637248173,
+        "ofi_15m": -0.11575070792326914,
+        "signed_volume_z": -1.8661729279583559,
+        "trade_count_z": 1.6591779683322911
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3650898575210557,
+        "expected_move_1h": 0.009653362206584583,
+        "flat": 0.10783401229690422,
+        "threshold": 0.4083325877087814,
+        "up": 0.5270761301820401
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-3-2024-08-05T06:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-11-06T03:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": 2290.318250000011,
+        "dollar_volume_z": 0.0,
+        "microprice_deviation_ewma": -0.0013782451091060154,
+        "ofi_15m": 0.11550940830226578,
+        "signed_volume_z": 0.0,
+        "trade_count_z": 0.0
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.5269333587322774,
+        "expected_move_1h": 0.0056940056194095595,
+        "flat": 0.13021509405025505,
+        "threshold": 0.4083325877087814,
+        "up": 0.34285154721746747
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-3-2024-11-06T03:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-05T17:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -68.42050000024028,
+        "dollar_volume_z": -0.5713266352239884,
+        "microprice_deviation_ewma": 0.0005564216591997835,
+        "ofi_15m": -0.14565283934574952,
+        "signed_volume_z": -0.6927758416214639,
+        "trade_count_z": -0.6361627986196192
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.36739629137359725,
+        "expected_move_1h": 0.016398667830511932,
+        "flat": 0.10744228439751062,
+        "threshold": 0.4083325877087814,
+        "up": 0.5251614242288921
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-3-2024-08-05T17:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-02T15:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1186.2799999999697,
+        "dollar_volume_z": 4.031500210485284,
+        "microprice_deviation_ewma": 0.0011336471752492012,
+        "ofi_15m": -0.11506652933957076,
+        "signed_volume_z": -2.52320424441577,
+        "trade_count_z": 3.396037503542499
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.34735422617677636,
+        "expected_move_1h": 0.006164780424488654,
+        "flat": 0.1348614589892495,
+        "threshold": 0.4083325877087814,
+        "up": 0.5177843148339741
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-3-2024-08-02T15:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-02T15:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1317.5417500000913,
+        "dollar_volume_z": 4.145737182289489,
+        "microprice_deviation_ewma": 0.0015000123965972696,
+        "ofi_15m": -0.07123591209692666,
+        "signed_volume_z": -1.7706807541908087,
+        "trade_count_z": 4.276338882156723
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.34735422617677636,
+        "expected_move_1h": 0.006335727810112816,
+        "flat": 0.1348614589892495,
+        "threshold": 0.4083325877087814,
+        "up": 0.5177843148339741
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-3-2024-08-02T15:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-05T07:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1986.1947500001406,
+        "dollar_volume_z": 0.2016139890783319,
+        "microprice_deviation_ewma": 0.0018271088565320693,
+        "ofi_15m": 0.07964850444083224,
+        "signed_volume_z": 1.43709558833169,
+        "trade_count_z": 0.5217510439598694
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.39746606858816597,
+        "expected_move_1h": 0.01103437915326875,
+        "flat": 0.08500316493361676,
+        "threshold": 0.4083325877087814,
+        "up": 0.5175307664782173
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-3-2024-08-05T07:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-01-20T17:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1305.8217500002356,
+        "dollar_volume_z": 3.0583466827398507,
+        "microprice_deviation_ewma": 0.0015499868664002896,
+        "ofi_15m": -0.07757920558071675,
+        "signed_volume_z": -3.2728694013137565,
+        "trade_count_z": 3.047967070656786
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.39746606858816597,
+        "expected_move_1h": 0.010016181640525682,
+        "flat": 0.08500316493361676,
+        "threshold": 0.4083325877087814,
+        "up": 0.5175307664782173
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-3-2025-01-20T17:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-05T06:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -2341.698500000348,
+        "dollar_volume_z": 0.3974655219464171,
+        "microprice_deviation_ewma": 0.0027699564132935154,
+        "ofi_15m": 0.002784511713833847,
+        "signed_volume_z": 0.5425270437451951,
+        "trade_count_z": 0.7616826419417911
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.39259964444679385,
+        "expected_move_1h": 0.010814787143828853,
+        "flat": 0.09017024354164171,
+        "threshold": 0.4083325877087814,
+        "up": 0.5172301120115645
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-3-2024-08-05T06:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2024-08-05T10:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -908.9157500008005,
+        "dollar_volume_z": -0.11650178445984663,
+        "microprice_deviation_ewma": 0.0011952859018832906,
+        "ofi_15m": -0.1274001343927487,
+        "signed_volume_z": -0.802588822665219,
+        "trade_count_z": -0.28415441657964896
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3634209927336644,
+        "expected_move_1h": 0.012575500691609988,
+        "flat": 0.12078735199966988,
+        "threshold": 0.4083325877087814,
+        "up": 0.5157916552666657
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-3-2024-08-05T10:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-03-03T19:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -887.8802500012098,
+        "dollar_volume_z": 1.6833375281087082,
+        "microprice_deviation_ewma": 0.001578573534538319,
+        "ofi_15m": -0.06452269088375842,
+        "signed_volume_z": -1.0554824740593987,
+        "trade_count_z": 2.464804950925597
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.41056674462845966,
+        "expected_move_1h": 0.006718039720885946,
+        "flat": 0.058444540636616436,
+        "threshold": 0.45182158357298563,
+        "up": 0.5309887147349239
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-4-2025-03-03T19:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-04-07T06:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -936.4634999999544,
+        "dollar_volume_z": 2.4984026110941118,
+        "microprice_deviation_ewma": 0.00150753313127529,
+        "ofi_15m": -0.1098830872129286,
+        "signed_volume_z": -1.7713509479596048,
+        "trade_count_z": 2.53041509671497
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.4238898367601528,
+        "expected_move_1h": 0.0057621509512962915,
+        "flat": 0.05091486137040206,
+        "threshold": 0.45182158357298563,
+        "up": 0.5251953018694451
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-4-2025-04-07T06:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-04-02T21:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1579.2935000000289,
+        "dollar_volume_z": 1.0284268112013109,
+        "microprice_deviation_ewma": 0.0009639323748466082,
+        "ofi_15m": -0.21303169792295515,
+        "signed_volume_z": -2.4602693740079915,
+        "trade_count_z": 0.8691019144924282
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.4018862754953042,
+        "expected_move_1h": 0.004146136375766875,
+        "flat": 0.07317977648137056,
+        "threshold": 0.45182158357298563,
+        "up": 0.5249339480233252
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-4-2025-04-02T21:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-10-10T21:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -3532.340749999974,
+        "dollar_volume_z": 1.6807567818855993,
+        "microprice_deviation_ewma": -0.0006007117902659736,
+        "ofi_15m": -0.029746757569698773,
+        "signed_volume_z": -0.25445839743230847,
+        "trade_count_z": 3.9257140067745575
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.4453360116753704,
+        "expected_move_1h": 0.005122702040321534,
+        "flat": 0.03044493041710268,
+        "threshold": 0.45182158357298563,
+        "up": 0.5242190579075269
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-4-2025-10-10T21:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-11-20T17:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1260.9452500001062,
+        "dollar_volume_z": 2.5536772152404748,
+        "microprice_deviation_ewma": 0.0009211371310944999,
+        "ofi_15m": -0.2333923199238459,
+        "signed_volume_z": -4.391749622910108,
+        "trade_count_z": 2.6225108930787364
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.40426851753233217,
+        "expected_move_1h": 0.0055377194940373076,
+        "flat": 0.07288830692858844,
+        "threshold": 0.45182158357298563,
+        "up": 0.5228431755390793
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-4-2025-11-20T17:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-03-04T21:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -574.1395000000484,
+        "dollar_volume_z": 1.4202342550702927,
+        "microprice_deviation_ewma": -0.00028586560377868433,
+        "ofi_15m": -0.2263039115180351,
+        "signed_volume_z": -3.8765031863150874,
+        "trade_count_z": 0.43166441701408803
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3996702142763539,
+        "expected_move_1h": 0.007498075125806546,
+        "flat": 0.07829040224669973,
+        "threshold": 0.45182158357298563,
+        "up": 0.5220393834769463
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-4-2025-03-04T21:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-03-02T20:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": 634.095500000054,
+        "dollar_volume_z": 0.40149765540474935,
+        "microprice_deviation_ewma": -0.0009300379797464635,
+        "ofi_15m": 0.24406798778672326,
+        "signed_volume_z": 1.8517062227642491,
+        "trade_count_z": -0.11012948385276541
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.5220391450626098,
+        "expected_move_1h": 0.006859265632260595,
+        "flat": 0.08320560640682309,
+        "threshold": 0.45182158357298563,
+        "up": 0.3947552485305669
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bull",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-4-2025-03-02T20:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-02-25T10:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1105.9522500000894,
+        "dollar_volume_z": 1.6880562675886148,
+        "microprice_deviation_ewma": 0.001172761256875125,
+        "ofi_15m": -0.1139989859843058,
+        "signed_volume_z": -1.8414376615074035,
+        "trade_count_z": 2.086918789321208
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.42098837918964094,
+        "expected_move_1h": 0.0052100309781482465,
+        "flat": 0.057411196082232586,
+        "threshold": 0.45182158357298563,
+        "up": 0.5216004247281265
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 0,
+        "direction": "neutral",
+        "label": "RANGE"
+      },
+      "snapshot_id": "fold-4-2025-02-25T10:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-02-26T20:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -612.2592500002356,
+        "dollar_volume_z": 1.0669623143452154,
+        "microprice_deviation_ewma": 0.0010964799555690248,
+        "ofi_15m": -0.19234346462882707,
+        "signed_volume_z": -2.5245997583913558,
+        "trade_count_z": 1.0927884905764562
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.42098837918964094,
+        "expected_move_1h": 0.006363921424369527,
+        "flat": 0.057411196082232586,
+        "threshold": 0.45182158357298563,
+        "up": 0.5216004247281265
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-4-2025-02-26T20:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-03-03T15:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1332.0400000001537,
+        "dollar_volume_z": 5.808411272313019,
+        "microprice_deviation_ewma": 0.0012792254401327865,
+        "ofi_15m": -0.12296447853925906,
+        "signed_volume_z": -4.800132446574564,
+        "trade_count_z": 6.262756698493938
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.42098837918964094,
+        "expected_move_1h": 0.008918473373570828,
+        "flat": 0.057411196082232586,
+        "threshold": 0.45182158357298563,
+        "up": 0.5216004247281265
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-4-2025-03-03T15:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-03-03T18:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -725.1395000006305,
+        "dollar_volume_z": 3.3234859830691583,
+        "microprice_deviation_ewma": 0.001312664841569536,
+        "ofi_15m": -0.07917491211563277,
+        "signed_volume_z": -2.189422886147584,
+        "trade_count_z": 2.416993622234235
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.42098837918964094,
+        "expected_move_1h": 0.006294627762628073,
+        "flat": 0.057411196082232586,
+        "threshold": 0.45182158357298563,
+        "up": 0.5216004247281265
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-4-2025-03-03T18:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2025-03-03T18:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -854.631500000949,
+        "dollar_volume_z": 2.5421902872079487,
+        "microprice_deviation_ewma": 0.0015028385693871748,
+        "ofi_15m": -0.0073250655755812966,
+        "signed_volume_z": 0.025787708937569504,
+        "trade_count_z": 3.1080461386452694
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.42098837918964094,
+        "expected_move_1h": 0.00649598231222709,
+        "flat": 0.057411196082232586,
+        "threshold": 0.45182158357298563,
+        "up": 0.5216004247281265
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-4-2025-03-03T18:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-05T18:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1409.83775000053,
+        "dollar_volume_z": 1.5631870431193606,
+        "microprice_deviation_ewma": 0.0009873758376196787,
+        "ofi_15m": -0.22648375515298533,
+        "signed_volume_z": -2.954926925696662,
+        "trade_count_z": 1.231983221626813
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.2567407004558171,
+        "expected_move_1h": 0.008444055023072885,
+        "flat": 0.06887032027026405,
+        "threshold": 0.38502690422939406,
+        "up": 0.6743889792739188
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-05T18:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-05T18:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -825.6840000003576,
+        "dollar_volume_z": 0.45465946369573096,
+        "microprice_deviation_ewma": 0.0013530325899802301,
+        "ofi_15m": -0.15491332924189236,
+        "signed_volume_z": -1.0833739881631979,
+        "trade_count_z": 0.8970561518140098
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.31378684993834494,
+        "expected_move_1h": 0.008314002435993532,
+        "flat": 0.07807444652123682,
+        "threshold": 0.38502690422939406,
+        "up": 0.6081387035404183
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-05T18:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-03T18:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1592.3540000002831,
+        "dollar_volume_z": 2.259711648879375,
+        "microprice_deviation_ewma": 0.0022943912425339146,
+        "ofi_15m": -0.19604697600014512,
+        "signed_volume_z": -3.0557954441525976,
+        "trade_count_z": 2.1029013495189477
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3306581775204548,
+        "expected_move_1h": 0.005296855089226186,
+        "flat": 0.08379553266745984,
+        "threshold": 0.38502690422939406,
+        "up": 0.5855462898120853
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-03T18:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-03T17:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -614.8707500002347,
+        "dollar_volume_z": 1.4934099473961246,
+        "microprice_deviation_ewma": 0.001646441308587245,
+        "ofi_15m": -0.19916809090286625,
+        "signed_volume_z": -2.5992014058811272,
+        "trade_count_z": 1.4987139297704062
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3353118237136957,
+        "expected_move_1h": 0.004686451001048991,
+        "flat": 0.08321293832102568,
+        "threshold": 0.38502690422939406,
+        "up": 0.5814752379652787
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-03T17:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-06-05T19:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1009.2470000003232,
+        "dollar_volume_z": 2.0270450602767585,
+        "microprice_deviation_ewma": 0.0009750793254327335,
+        "ofi_15m": -0.15354437727767534,
+        "signed_volume_z": -2.6566179185104417,
+        "trade_count_z": 2.1646187534305468
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3353118237136957,
+        "expected_move_1h": 0.007358689544681763,
+        "flat": 0.08321293832102568,
+        "threshold": 0.38502690422939406,
+        "up": 0.5814752379652787
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-06-05T19:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-03T17:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -695.5580000000773,
+        "dollar_volume_z": 3.0731739597202448,
+        "microprice_deviation_ewma": 0.0014514471527102694,
+        "ofi_15m": -0.22932686866247928,
+        "signed_volume_z": -5.265424989511263,
+        "trade_count_z": 2.2075926208923145
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.33946531304406113,
+        "expected_move_1h": 0.004416712110232863,
+        "flat": 0.08269295908294778,
+        "threshold": 0.38502690422939406,
+        "up": 0.577841727872991
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-03T17:15:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-01-31T18:45:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -2301.266500000842,
+        "dollar_volume_z": 4.591773707162651,
+        "microprice_deviation_ewma": -8.489922505695564e-05,
+        "ofi_15m": -0.328123883895186,
+        "signed_volume_z": -6.341058122840679,
+        "trade_count_z": 3.235490732882196
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3487508594392575,
+        "expected_move_1h": 0.004488593635590481,
+        "flat": 0.07571867638043145,
+        "threshold": 0.38502690422939406,
+        "up": 0.5755304641803111
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-01-31T18:45:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-03T18:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1412.1807500001742,
+        "dollar_volume_z": 4.047028689739992,
+        "microprice_deviation_ewma": 0.0021100373323565177,
+        "ofi_15m": -0.16353177405403613,
+        "signed_volume_z": -4.195234322181231,
+        "trade_count_z": 3.8777509743310667
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3487508594392575,
+        "expected_move_1h": 0.005136982532643514,
+        "flat": 0.07571867638043145,
+        "threshold": 0.38502690422939406,
+        "up": 0.5755304641803111
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-03T18:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-03T19:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1693.0977500005392,
+        "dollar_volume_z": 2.158715343255096,
+        "microprice_deviation_ewma": 0.0023908980927753063,
+        "ofi_15m": -0.05461711648092759,
+        "signed_volume_z": -0.6369923603234829,
+        "trade_count_z": 2.7920507022052976
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3487508594392575,
+        "expected_move_1h": 0.005488684714368255,
+        "flat": 0.07571867638043145,
+        "threshold": 0.38502690422939406,
+        "up": 0.5755304641803111
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-03T19:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-05T20:30:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -1655.0750000008848,
+        "dollar_volume_z": 3.720536633739147,
+        "microprice_deviation_ewma": 0.0013238527571440108,
+        "ofi_15m": -0.17334198837990444,
+        "signed_volume_z": -4.123766330640008,
+        "trade_count_z": 3.394232130486813
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3487508594392575,
+        "expected_move_1h": 0.008778242963989156,
+        "flat": 0.07571867638043145,
+        "threshold": 0.38502690422939406,
+        "up": 0.5755304641803111
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-05T20:30:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-06T00:00:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -491.8512499994831,
+        "dollar_volume_z": 0.05777006113228034,
+        "microprice_deviation_ewma": 0.00037915801433520337,
+        "ofi_15m": -0.2814674853912923,
+        "signed_volume_z": -1.6598955235966766,
+        "trade_count_z": 0.24410506052795708
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.3487508594392575,
+        "expected_move_1h": 0.00946820478220614,
+        "flat": 0.07571867638043145,
+        "threshold": 0.38502690422939406,
+        "up": 0.5755304641803111
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-06T00:00:00+00:00",
+      "symbol": "BTC_USDT"
+    },
+    {
+      "as_of": "2026-02-03T18:15:00+00:00",
+      "flow_features": {
+        "cvd_slope_1h": -586.0667499999981,
+        "dollar_volume_z": 2.9353627569649885,
+        "microprice_deviation_ewma": 0.0019352379914555646,
+        "ofi_15m": -0.19301437054102796,
+        "signed_volume_z": -3.9298155124289162,
+        "trade_count_z": 2.243688580380157
+      },
+      "governor": {
+        "daily_loss_limit_r": -3.0,
+        "evening_bell_utc": 19,
+        "max_correlated": 2,
+        "max_positions": 3,
+        "risk_fraction": 0.02
+      },
+      "model_probability": {
+        "down": 0.34644921519601907,
+        "expected_move_1h": 0.004960290360005778,
+        "flat": 0.08181863780006006,
+        "threshold": 0.38502690422939406,
+        "up": 0.5717321470039209
+      },
+      "position": {
+        "open": false,
+        "symbol": null
+      },
+      "quant": {
+        "action": "flat",
+        "approved": false,
+        "quantity": 0.0,
+        "reason": "quant-gates"
+      },
+      "regime": {
+        "aligned_timeframes": 2,
+        "direction": "bear",
+        "label": "TRANSITION"
+      },
+      "snapshot_id": "fold-5-2026-02-03T18:15:00+00:00",
+      "symbol": "BTC_USDT"
+    }
+  ],
+  "verdict": "NO MEASURABLE VALUE"
+}

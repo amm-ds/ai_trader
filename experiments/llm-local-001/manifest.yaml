@@ -1,0 +1,7 @@
+experiment: llm-local-001
+parent: edge-001
+model: qwen3.6:35b-a3b-q4_K_M
+requested_model: qwen3.8:27b-mlx
+pull_result: failed_no_space_left_on_device
+snapshots: 60
+llm_authority: veto_or_half_size_only

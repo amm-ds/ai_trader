@@ -1,0 +1,2522 @@
+[
+  {
+    "as_of": "2022-11-08T19:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -3445.5544999983977,
+      "dollar_volume_z": 2.7687771527848226,
+      "microprice_deviation_ewma": 0.004371847661627355,
+      "ofi_15m": -0.11713778858002585,
+      "signed_volume_z": -4.267283916180336,
+      "trade_count_z": 3.7607104716356354
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.39702869403032465,
+      "expected_move_1h": 0.011267578343498619,
+      "flat": 0.010406865958719704,
+      "threshold": 0.46430441870105815,
+      "up": 0.5925644400109557
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-11-08T19:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2022-11-08T18:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -3171.058500000101,
+      "dollar_volume_z": 3.5200230104268924,
+      "microprice_deviation_ewma": 0.0014471092575172437,
+      "ofi_15m": -0.028468743490099042,
+      "signed_volume_z": -1.125240325078457,
+      "trade_count_z": 4.319763755992374
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.38638296347348705,
+      "expected_move_1h": 0.009483028650275898,
+      "flat": 0.03694132561944969,
+      "threshold": 0.46430441870105815,
+      "up": 0.5766757109070633
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-11-08T18:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2022-11-09T21:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -3572.522499998915,
+      "dollar_volume_z": 1.4782355024585936,
+      "microprice_deviation_ewma": 0.0020124727401498186,
+      "ofi_15m": -0.1231086514591379,
+      "signed_volume_z": -2.886420510356004,
+      "trade_count_z": 1.519882135791121
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.4009295012941549,
+      "expected_move_1h": 0.011498894739241311,
+      "flat": 0.028906767168352585,
+      "threshold": 0.46430441870105815,
+      "up": 0.5701637315374926
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-11-09T21:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2022-11-08T18:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -3219.103250000364,
+      "dollar_volume_z": 3.2333478570394223,
+      "microprice_deviation_ewma": 0.0017317167357513482,
+      "ofi_15m": -0.07597529329530836,
+      "signed_volume_z": -2.8517536019224554,
+      "trade_count_z": 4.041056187142289
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.37921632308186154,
+      "expected_move_1h": 0.008922850600101546,
+      "flat": 0.05480416080574952,
+      "threshold": 0.46430441870105815,
+      "up": 0.5659795161123891
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-11-08T18:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2022-11-09T22:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -3226.7835000014456,
+      "dollar_volume_z": 1.437922403996501,
+      "microprice_deviation_ewma": 0.0030042457774299004,
+      "ofi_15m": -0.06395029423421957,
+      "signed_volume_z": -1.26395167211912,
+      "trade_count_z": 1.901235850651933
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3995585122876416,
+      "expected_move_1h": 0.011678377161905654,
+      "flat": 0.036148123654729455,
+      "threshold": 0.46430441870105815,
+      "up": 0.5642933640576289
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-11-09T22:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2022-09-21T21:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1395.494000000006,
+      "dollar_volume_z": 0.8359918797250521,
+      "microprice_deviation_ewma": 0.000436306034951502,
+      "ofi_15m": -0.13740945644173475,
+      "signed_volume_z": -2.923283188794469,
+      "trade_count_z": 0.5105952529204953
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.40027727724110856,
+      "expected_move_1h": 0.0059053418767476655,
+      "flat": 0.03610485215376173,
+      "threshold": 0.46430441870105815,
+      "up": 0.5636178706051297
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-09-21T21:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2022-11-09T18:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -2139.6102499986882,
+      "dollar_volume_z": 1.4785683557989557,
+      "microprice_deviation_ewma": 0.0015148762602282691,
+      "ofi_15m": -0.11623308973761977,
+      "signed_volume_z": -2.6369108733622086,
+      "trade_count_z": 1.6789903686621823
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.40027727724110856,
+      "expected_move_1h": 0.01158799153309123,
+      "flat": 0.03610485215376173,
+      "threshold": 0.46430441870105815,
+      "up": 0.5636178706051297
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-11-09T18:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2022-11-08T19:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1506.920249998453,
+      "dollar_volume_z": 0.6731530276912379,
+      "microprice_deviation_ewma": 0.0025377633781935426,
+      "ofi_15m": -0.023396700455478064,
+      "signed_volume_z": -0.1503636479270016,
+      "trade_count_z": 1.08242328981674
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.40517809459521925,
+      "expected_move_1h": 0.01069700782307458,
+      "flat": 0.03580981032978552,
+      "threshold": 0.46430441870105815,
+      "up": 0.5590120950749952
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-11-08T19:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2022-09-21T20:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -527.0247499997495,
+      "dollar_volume_z": 0.1557056144685068,
+      "microprice_deviation_ewma": -8.228769036608717e-05,
+      "ofi_15m": -0.11437156489926427,
+      "signed_volume_z": -1.464600647616356,
+      "trade_count_z": 0.06227176745796165
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.410139114839308,
+      "expected_move_1h": 0.0056781215177397135,
+      "flat": 0.03624826738448026,
+      "threshold": 0.46430441870105815,
+      "up": 0.5536126177762116
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-09-21T20:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-03-14T19:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1912.088750000199,
+      "dollar_volume_z": 0.7770112790159092,
+      "microprice_deviation_ewma": 0.0015191683220368611,
+      "ofi_15m": -0.1488426472518399,
+      "signed_volume_z": -2.574070620766657,
+      "trade_count_z": 0.5187121439554094
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3775410371058039,
+      "expected_move_1h": 0.006870094404119,
+      "flat": 0.07117241111603644,
+      "threshold": 0.46430441870105815,
+      "up": 0.5512865517781597
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2023-03-14T19:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-05-15T21:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -28.21025000003283,
+      "dollar_volume_z": -0.8425304779772068,
+      "microprice_deviation_ewma": -3.516583967077297e-05,
+      "ofi_15m": -0.04229992752263249,
+      "signed_volume_z": -0.13207032846418612,
+      "trade_count_z": -0.960120177185443
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.25432028307456556,
+      "expected_move_1h": 0.002438171749344491,
+      "flat": 0.19510964343372086,
+      "threshold": 0.46430441870105815,
+      "up": 0.5505700734917135
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2023-05-15T21:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2022-09-06T17:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -5483.951500000054,
+      "dollar_volume_z": 6.889601979408618,
+      "microprice_deviation_ewma": 0.0007027481004672362,
+      "ofi_15m": -0.24843631100381788,
+      "signed_volume_z": -7.657677939369272,
+      "trade_count_z": 7.324214419815178
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.41467751230699984,
+      "expected_move_1h": 0.0035740623018792202,
+      "flat": 0.035969372734835664,
+      "threshold": 0.46430441870105815,
+      "up": 0.5493531149581645
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-1-2022-09-06T17:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-08-17T23:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": 129.71574999712175,
+      "dollar_volume_z": 0.4482957464451524,
+      "microprice_deviation_ewma": 0.0023903588755497087,
+      "ofi_15m": -0.10853154225827279,
+      "signed_volume_z": -0.3242290197293686,
+      "trade_count_z": 0.8317321530799525
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.38539078164628404,
+      "expected_move_1h": 0.006491851791576811,
+      "flat": 0.05886226161248487,
+      "threshold": 0.4168287730171816,
+      "up": 0.5557469567412311
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-2-2023-08-17T23:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-08-17T22:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -4828.239249997598,
+      "dollar_volume_z": 0.974457525807973,
+      "microprice_deviation_ewma": 0.003696748694733508,
+      "ofi_15m": 0.05657128238406089,
+      "signed_volume_z": 0.5780075159691737,
+      "trade_count_z": 2.186909559370335
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.39386212697698525,
+      "expected_move_1h": 0.005405339613944745,
+      "flat": 0.06014462843598496,
+      "threshold": 0.4168287730171816,
+      "up": 0.5459932445870298
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-2-2023-08-17T22:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-08-17T22:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -5148.646249995276,
+      "dollar_volume_z": 2.186340654970436,
+      "microprice_deviation_ewma": 0.004538241252094176,
+      "ofi_15m": 0.012356930695672091,
+      "signed_volume_z": 0.346700395612145,
+      "trade_count_z": 4.130401127308506
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.37378510709910456,
+      "expected_move_1h": 0.004967321723395521,
+      "flat": 0.0877830340849685,
+      "threshold": 0.4168287730171816,
+      "up": 0.538431858815927
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-2-2023-08-17T22:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-08-17T22:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": 1759.2189999977127,
+      "dollar_volume_z": 0.5521144147184377,
+      "microprice_deviation_ewma": 0.0034277497015975894,
+      "ofi_15m": -0.026215669612368153,
+      "signed_volume_z": 0.06142667982504859,
+      "trade_count_z": 1.055408958648198
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.40479317764317496,
+      "expected_move_1h": 0.0060382264456220825,
+      "flat": 0.05994249165816563,
+      "threshold": 0.4168287730171816,
+      "up": 0.5352643306986594
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-2-2023-08-17T22:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-08-17T21:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -7990.362499997485,
+      "dollar_volume_z": 5.948451107583815,
+      "microprice_deviation_ewma": 0.006400907281682747,
+      "ofi_15m": -0.3242687586770298,
+      "signed_volume_z": -7.732130375691963,
+      "trade_count_z": 5.022462876334464
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3556008456758672,
+      "expected_move_1h": 0.00394525756676031,
+      "flat": 0.10974577015654373,
+      "threshold": 0.4168287730171816,
+      "up": 0.5346533841675891
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-2-2023-08-17T21:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-08-18T00:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -694.6000000018976,
+      "dollar_volume_z": -0.17622036036995958,
+      "microprice_deviation_ewma": 0.0017933687326300413,
+      "ofi_15m": -0.016353746266145327,
+      "signed_volume_z": 0.15160376877323375,
+      "trade_count_z": 0.059677917819079156
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3860379668384327,
+      "expected_move_1h": 0.006556375871209435,
+      "flat": 0.08756169936029064,
+      "threshold": 0.4168287730171816,
+      "up": 0.5264003338012766
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-2-2023-08-18T00:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-08-17T23:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": 1142.8307499969378,
+      "dollar_volume_z": 1.4062078682403718,
+      "microprice_deviation_ewma": 0.0025536916300173303,
+      "ofi_15m": 0.10929677938235742,
+      "signed_volume_z": 1.1317258299967963,
+      "trade_count_z": 1.8445934361194354
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.41925568232666827,
+      "expected_move_1h": 0.006242652499273689,
+      "flat": 0.059031400432733395,
+      "threshold": 0.4168287730171816,
+      "up": 0.5217129172405984
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-2-2023-08-17T23:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-08-17T23:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": 881.486999994202,
+      "dollar_volume_z": 0.9725220709418979,
+      "microprice_deviation_ewma": 0.0023093622254395,
+      "ofi_15m": -0.023499437244424284,
+      "signed_volume_z": 0.01974073531236546,
+      "trade_count_z": 1.7471768575865858
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.43054700853041433,
+      "expected_move_1h": 0.006464947417614952,
+      "flat": 0.05985696943939336,
+      "threshold": 0.4168287730171816,
+      "up": 0.5095960220301923
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-2-2023-08-17T23:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2023-08-17T23:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": 135.56324999715434,
+      "dollar_volume_z": 0.4560043065804962,
+      "microprice_deviation_ewma": 0.001929738365271533,
+      "ofi_15m": -0.02644923316446381,
+      "signed_volume_z": 0.059349718092932026,
+      "trade_count_z": 0.7316359532656299
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.44102655615696956,
+      "expected_move_1h": 0.006551839742511476,
+      "flat": 0.06058320000595046,
+      "threshold": 0.4168287730171816,
+      "up": 0.4983902438370799
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-2-2023-08-17T23:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-03-07T22:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -43.05249999999069,
+      "dollar_volume_z": -0.6352713079373011,
+      "microprice_deviation_ewma": 7.440722286092804e-05,
+      "ofi_15m": -0.36198166121556047,
+      "signed_volume_z": -1.2976572405798694,
+      "trade_count_z": -0.7834704304910224
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.27044612256742934,
+      "expected_move_1h": 0.0034280339476608357,
+      "flat": 0.23707156973979762,
+      "threshold": 0.4168287730171816,
+      "up": 0.49248230769277307
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-2-2024-03-07T22:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-03-05T19:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1111.1937500005588,
+      "dollar_volume_z": 0.7127559561173131,
+      "microprice_deviation_ewma": 0.00030516541012128376,
+      "ofi_15m": -0.14550883488422658,
+      "signed_volume_z": -1.8874845645606602,
+      "trade_count_z": 0.5556347028248018
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3890620426696268,
+      "expected_move_1h": 0.008286346424524681,
+      "flat": 0.11925465599633082,
+      "threshold": 0.4168287730171816,
+      "up": 0.4916833013340424
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-2-2024-03-05T19:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-01-10T23:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": 554.8522499999381,
+      "dollar_volume_z": 0.43822167938970935,
+      "microprice_deviation_ewma": -0.0008878282836232749,
+      "ofi_15m": 0.15944575486940898,
+      "signed_volume_z": 2.0333726426890673,
+      "trade_count_z": 0.45280279647130905
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.4904447213767887,
+      "expected_move_1h": 0.005283123886870592,
+      "flat": 0.11896242287827495,
+      "threshold": 0.4168287730171816,
+      "up": 0.3905928557449364
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bull",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-2-2024-01-10T23:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-05T06:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -2478.1585000007763,
+      "dollar_volume_z": 2.3961354027748873,
+      "microprice_deviation_ewma": 0.002691178007211765,
+      "ofi_15m": -0.10622619027918262,
+      "signed_volume_z": -2.9749012761477966,
+      "trade_count_z": 2.797166296747868
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.38689687428832603,
+      "expected_move_1h": 0.010293395138366688,
+      "flat": 0.060067294099668773,
+      "threshold": 0.4083325877087814,
+      "up": 0.5530358316120052
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-3-2024-08-05T06:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-05T13:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -324.01624999922933,
+      "dollar_volume_z": -0.33377712284367134,
+      "microprice_deviation_ewma": 0.0015272782999602914,
+      "ofi_15m": -0.01945345540249326,
+      "signed_volume_z": 0.17610507634442038,
+      "trade_count_z": -0.1187059537370877
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.41309436135971683,
+      "expected_move_1h": 0.013883985216529901,
+      "flat": 0.05750065874160744,
+      "threshold": 0.4083325877087814,
+      "up": 0.5294049798986756
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-3-2024-08-05T13:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-05T21:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": 299.90250000025844,
+      "dollar_volume_z": -0.6562760349537783,
+      "microprice_deviation_ewma": -0.0008693581846519212,
+      "ofi_15m": -0.001701279713543675,
+      "signed_volume_z": 0.18677583667544526,
+      "trade_count_z": -0.6242258241574833
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.5272054347319158,
+      "expected_move_1h": 0.016926302994293138,
+      "flat": 0.14165550287457396,
+      "threshold": 0.4083325877087814,
+      "up": 0.33113906239351026
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bull",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-3-2024-08-05T21:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-05T06:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -537.2827500006533,
+      "dollar_volume_z": 0.8794970640585321,
+      "microprice_deviation_ewma": 0.0022854771637248173,
+      "ofi_15m": -0.11575070792326914,
+      "signed_volume_z": -1.8661729279583559,
+      "trade_count_z": 1.6591779683322911
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3650898575210557,
+      "expected_move_1h": 0.009653362206584583,
+      "flat": 0.10783401229690422,
+      "threshold": 0.4083325877087814,
+      "up": 0.5270761301820401
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-3-2024-08-05T06:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-11-06T03:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": 2290.318250000011,
+      "dollar_volume_z": 0.0,
+      "microprice_deviation_ewma": -0.0013782451091060154,
+      "ofi_15m": 0.11550940830226578,
+      "signed_volume_z": 0.0,
+      "trade_count_z": 0.0
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.5269333587322774,
+      "expected_move_1h": 0.0056940056194095595,
+      "flat": 0.13021509405025505,
+      "threshold": 0.4083325877087814,
+      "up": 0.34285154721746747
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-3-2024-11-06T03:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-05T17:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -68.42050000024028,
+      "dollar_volume_z": -0.5713266352239884,
+      "microprice_deviation_ewma": 0.0005564216591997835,
+      "ofi_15m": -0.14565283934574952,
+      "signed_volume_z": -0.6927758416214639,
+      "trade_count_z": -0.6361627986196192
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.36739629137359725,
+      "expected_move_1h": 0.016398667830511932,
+      "flat": 0.10744228439751062,
+      "threshold": 0.4083325877087814,
+      "up": 0.5251614242288921
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-3-2024-08-05T17:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-02T15:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1186.2799999999697,
+      "dollar_volume_z": 4.031500210485284,
+      "microprice_deviation_ewma": 0.0011336471752492012,
+      "ofi_15m": -0.11506652933957076,
+      "signed_volume_z": -2.52320424441577,
+      "trade_count_z": 3.396037503542499
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.34735422617677636,
+      "expected_move_1h": 0.006164780424488654,
+      "flat": 0.1348614589892495,
+      "threshold": 0.4083325877087814,
+      "up": 0.5177843148339741
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-3-2024-08-02T15:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-02T15:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1317.5417500000913,
+      "dollar_volume_z": 4.145737182289489,
+      "microprice_deviation_ewma": 0.0015000123965972696,
+      "ofi_15m": -0.07123591209692666,
+      "signed_volume_z": -1.7706807541908087,
+      "trade_count_z": 4.276338882156723
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.34735422617677636,
+      "expected_move_1h": 0.006335727810112816,
+      "flat": 0.1348614589892495,
+      "threshold": 0.4083325877087814,
+      "up": 0.5177843148339741
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-3-2024-08-02T15:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-05T07:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1986.1947500001406,
+      "dollar_volume_z": 0.2016139890783319,
+      "microprice_deviation_ewma": 0.0018271088565320693,
+      "ofi_15m": 0.07964850444083224,
+      "signed_volume_z": 1.43709558833169,
+      "trade_count_z": 0.5217510439598694
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.39746606858816597,
+      "expected_move_1h": 0.01103437915326875,
+      "flat": 0.08500316493361676,
+      "threshold": 0.4083325877087814,
+      "up": 0.5175307664782173
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-3-2024-08-05T07:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-01-20T17:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1305.8217500002356,
+      "dollar_volume_z": 3.0583466827398507,
+      "microprice_deviation_ewma": 0.0015499868664002896,
+      "ofi_15m": -0.07757920558071675,
+      "signed_volume_z": -3.2728694013137565,
+      "trade_count_z": 3.047967070656786
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.39746606858816597,
+      "expected_move_1h": 0.010016181640525682,
+      "flat": 0.08500316493361676,
+      "threshold": 0.4083325877087814,
+      "up": 0.5175307664782173
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-3-2025-01-20T17:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-05T06:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -2341.698500000348,
+      "dollar_volume_z": 0.3974655219464171,
+      "microprice_deviation_ewma": 0.0027699564132935154,
+      "ofi_15m": 0.002784511713833847,
+      "signed_volume_z": 0.5425270437451951,
+      "trade_count_z": 0.7616826419417911
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.39259964444679385,
+      "expected_move_1h": 0.010814787143828853,
+      "flat": 0.09017024354164171,
+      "threshold": 0.4083325877087814,
+      "up": 0.5172301120115645
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-3-2024-08-05T06:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2024-08-05T10:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -908.9157500008005,
+      "dollar_volume_z": -0.11650178445984663,
+      "microprice_deviation_ewma": 0.0011952859018832906,
+      "ofi_15m": -0.1274001343927487,
+      "signed_volume_z": -0.802588822665219,
+      "trade_count_z": -0.28415441657964896
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3634209927336644,
+      "expected_move_1h": 0.012575500691609988,
+      "flat": 0.12078735199966988,
+      "threshold": 0.4083325877087814,
+      "up": 0.5157916552666657
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-3-2024-08-05T10:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-03-03T19:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -887.8802500012098,
+      "dollar_volume_z": 1.6833375281087082,
+      "microprice_deviation_ewma": 0.001578573534538319,
+      "ofi_15m": -0.06452269088375842,
+      "signed_volume_z": -1.0554824740593987,
+      "trade_count_z": 2.464804950925597
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.41056674462845966,
+      "expected_move_1h": 0.006718039720885946,
+      "flat": 0.058444540636616436,
+      "threshold": 0.45182158357298563,
+      "up": 0.5309887147349239
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-4-2025-03-03T19:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-04-07T06:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -936.4634999999544,
+      "dollar_volume_z": 2.4984026110941118,
+      "microprice_deviation_ewma": 0.00150753313127529,
+      "ofi_15m": -0.1098830872129286,
+      "signed_volume_z": -1.7713509479596048,
+      "trade_count_z": 2.53041509671497
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.4238898367601528,
+      "expected_move_1h": 0.0057621509512962915,
+      "flat": 0.05091486137040206,
+      "threshold": 0.45182158357298563,
+      "up": 0.5251953018694451
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-4-2025-04-07T06:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-04-02T21:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1579.2935000000289,
+      "dollar_volume_z": 1.0284268112013109,
+      "microprice_deviation_ewma": 0.0009639323748466082,
+      "ofi_15m": -0.21303169792295515,
+      "signed_volume_z": -2.4602693740079915,
+      "trade_count_z": 0.8691019144924282
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.4018862754953042,
+      "expected_move_1h": 0.004146136375766875,
+      "flat": 0.07317977648137056,
+      "threshold": 0.45182158357298563,
+      "up": 0.5249339480233252
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-4-2025-04-02T21:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-10-10T21:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -3532.340749999974,
+      "dollar_volume_z": 1.6807567818855993,
+      "microprice_deviation_ewma": -0.0006007117902659736,
+      "ofi_15m": -0.029746757569698773,
+      "signed_volume_z": -0.25445839743230847,
+      "trade_count_z": 3.9257140067745575
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.4453360116753704,
+      "expected_move_1h": 0.005122702040321534,
+      "flat": 0.03044493041710268,
+      "threshold": 0.45182158357298563,
+      "up": 0.5242190579075269
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-4-2025-10-10T21:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-11-20T17:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1260.9452500001062,
+      "dollar_volume_z": 2.5536772152404748,
+      "microprice_deviation_ewma": 0.0009211371310944999,
+      "ofi_15m": -0.2333923199238459,
+      "signed_volume_z": -4.391749622910108,
+      "trade_count_z": 2.6225108930787364
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.40426851753233217,
+      "expected_move_1h": 0.0055377194940373076,
+      "flat": 0.07288830692858844,
+      "threshold": 0.45182158357298563,
+      "up": 0.5228431755390793
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-4-2025-11-20T17:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-03-04T21:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -574.1395000000484,
+      "dollar_volume_z": 1.4202342550702927,
+      "microprice_deviation_ewma": -0.00028586560377868433,
+      "ofi_15m": -0.2263039115180351,
+      "signed_volume_z": -3.8765031863150874,
+      "trade_count_z": 0.43166441701408803
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3996702142763539,
+      "expected_move_1h": 0.007498075125806546,
+      "flat": 0.07829040224669973,
+      "threshold": 0.45182158357298563,
+      "up": 0.5220393834769463
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-4-2025-03-04T21:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-03-02T20:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": 634.095500000054,
+      "dollar_volume_z": 0.40149765540474935,
+      "microprice_deviation_ewma": -0.0009300379797464635,
+      "ofi_15m": 0.24406798778672326,
+      "signed_volume_z": 1.8517062227642491,
+      "trade_count_z": -0.11012948385276541
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.5220391450626098,
+      "expected_move_1h": 0.006859265632260595,
+      "flat": 0.08320560640682309,
+      "threshold": 0.45182158357298563,
+      "up": 0.3947552485305669
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bull",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-4-2025-03-02T20:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-02-25T10:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1105.9522500000894,
+      "dollar_volume_z": 1.6880562675886148,
+      "microprice_deviation_ewma": 0.001172761256875125,
+      "ofi_15m": -0.1139989859843058,
+      "signed_volume_z": -1.8414376615074035,
+      "trade_count_z": 2.086918789321208
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.42098837918964094,
+      "expected_move_1h": 0.0052100309781482465,
+      "flat": 0.057411196082232586,
+      "threshold": 0.45182158357298563,
+      "up": 0.5216004247281265
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 0,
+      "direction": "neutral",
+      "label": "RANGE"
+    },
+    "snapshot_id": "fold-4-2025-02-25T10:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-02-26T20:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -612.2592500002356,
+      "dollar_volume_z": 1.0669623143452154,
+      "microprice_deviation_ewma": 0.0010964799555690248,
+      "ofi_15m": -0.19234346462882707,
+      "signed_volume_z": -2.5245997583913558,
+      "trade_count_z": 1.0927884905764562
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.42098837918964094,
+      "expected_move_1h": 0.006363921424369527,
+      "flat": 0.057411196082232586,
+      "threshold": 0.45182158357298563,
+      "up": 0.5216004247281265
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-4-2025-02-26T20:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-03-03T15:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1332.0400000001537,
+      "dollar_volume_z": 5.808411272313019,
+      "microprice_deviation_ewma": 0.0012792254401327865,
+      "ofi_15m": -0.12296447853925906,
+      "signed_volume_z": -4.800132446574564,
+      "trade_count_z": 6.262756698493938
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.42098837918964094,
+      "expected_move_1h": 0.008918473373570828,
+      "flat": 0.057411196082232586,
+      "threshold": 0.45182158357298563,
+      "up": 0.5216004247281265
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-4-2025-03-03T15:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-03-03T18:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -725.1395000006305,
+      "dollar_volume_z": 3.3234859830691583,
+      "microprice_deviation_ewma": 0.001312664841569536,
+      "ofi_15m": -0.07917491211563277,
+      "signed_volume_z": -2.189422886147584,
+      "trade_count_z": 2.416993622234235
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.42098837918964094,
+      "expected_move_1h": 0.006294627762628073,
+      "flat": 0.057411196082232586,
+      "threshold": 0.45182158357298563,
+      "up": 0.5216004247281265
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-4-2025-03-03T18:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2025-03-03T18:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -854.631500000949,
+      "dollar_volume_z": 2.5421902872079487,
+      "microprice_deviation_ewma": 0.0015028385693871748,
+      "ofi_15m": -0.0073250655755812966,
+      "signed_volume_z": 0.025787708937569504,
+      "trade_count_z": 3.1080461386452694
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.42098837918964094,
+      "expected_move_1h": 0.00649598231222709,
+      "flat": 0.057411196082232586,
+      "threshold": 0.45182158357298563,
+      "up": 0.5216004247281265
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-4-2025-03-03T18:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-05T18:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1409.83775000053,
+      "dollar_volume_z": 1.5631870431193606,
+      "microprice_deviation_ewma": 0.0009873758376196787,
+      "ofi_15m": -0.22648375515298533,
+      "signed_volume_z": -2.954926925696662,
+      "trade_count_z": 1.231983221626813
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.2567407004558171,
+      "expected_move_1h": 0.008444055023072885,
+      "flat": 0.06887032027026405,
+      "threshold": 0.38502690422939406,
+      "up": 0.6743889792739188
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-05T18:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-05T18:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -825.6840000003576,
+      "dollar_volume_z": 0.45465946369573096,
+      "microprice_deviation_ewma": 0.0013530325899802301,
+      "ofi_15m": -0.15491332924189236,
+      "signed_volume_z": -1.0833739881631979,
+      "trade_count_z": 0.8970561518140098
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.31378684993834494,
+      "expected_move_1h": 0.008314002435993532,
+      "flat": 0.07807444652123682,
+      "threshold": 0.38502690422939406,
+      "up": 0.6081387035404183
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-05T18:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-03T18:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1592.3540000002831,
+      "dollar_volume_z": 2.259711648879375,
+      "microprice_deviation_ewma": 0.0022943912425339146,
+      "ofi_15m": -0.19604697600014512,
+      "signed_volume_z": -3.0557954441525976,
+      "trade_count_z": 2.1029013495189477
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3306581775204548,
+      "expected_move_1h": 0.005296855089226186,
+      "flat": 0.08379553266745984,
+      "threshold": 0.38502690422939406,
+      "up": 0.5855462898120853
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-03T18:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-03T17:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -614.8707500002347,
+      "dollar_volume_z": 1.4934099473961246,
+      "microprice_deviation_ewma": 0.001646441308587245,
+      "ofi_15m": -0.19916809090286625,
+      "signed_volume_z": -2.5992014058811272,
+      "trade_count_z": 1.4987139297704062
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3353118237136957,
+      "expected_move_1h": 0.004686451001048991,
+      "flat": 0.08321293832102568,
+      "threshold": 0.38502690422939406,
+      "up": 0.5814752379652787
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-03T17:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-06-05T19:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1009.2470000003232,
+      "dollar_volume_z": 2.0270450602767585,
+      "microprice_deviation_ewma": 0.0009750793254327335,
+      "ofi_15m": -0.15354437727767534,
+      "signed_volume_z": -2.6566179185104417,
+      "trade_count_z": 2.1646187534305468
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3353118237136957,
+      "expected_move_1h": 0.007358689544681763,
+      "flat": 0.08321293832102568,
+      "threshold": 0.38502690422939406,
+      "up": 0.5814752379652787
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-06-05T19:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-03T17:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -695.5580000000773,
+      "dollar_volume_z": 3.0731739597202448,
+      "microprice_deviation_ewma": 0.0014514471527102694,
+      "ofi_15m": -0.22932686866247928,
+      "signed_volume_z": -5.265424989511263,
+      "trade_count_z": 2.2075926208923145
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.33946531304406113,
+      "expected_move_1h": 0.004416712110232863,
+      "flat": 0.08269295908294778,
+      "threshold": 0.38502690422939406,
+      "up": 0.577841727872991
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-03T17:15:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-01-31T18:45:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -2301.266500000842,
+      "dollar_volume_z": 4.591773707162651,
+      "microprice_deviation_ewma": -8.489922505695564e-05,
+      "ofi_15m": -0.328123883895186,
+      "signed_volume_z": -6.341058122840679,
+      "trade_count_z": 3.235490732882196
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3487508594392575,
+      "expected_move_1h": 0.004488593635590481,
+      "flat": 0.07571867638043145,
+      "threshold": 0.38502690422939406,
+      "up": 0.5755304641803111
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-01-31T18:45:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-03T18:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1412.1807500001742,
+      "dollar_volume_z": 4.047028689739992,
+      "microprice_deviation_ewma": 0.0021100373323565177,
+      "ofi_15m": -0.16353177405403613,
+      "signed_volume_z": -4.195234322181231,
+      "trade_count_z": 3.8777509743310667
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3487508594392575,
+      "expected_move_1h": 0.005136982532643514,
+      "flat": 0.07571867638043145,
+      "threshold": 0.38502690422939406,
+      "up": 0.5755304641803111
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-03T18:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-03T19:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1693.0977500005392,
+      "dollar_volume_z": 2.158715343255096,
+      "microprice_deviation_ewma": 0.0023908980927753063,
+      "ofi_15m": -0.05461711648092759,
+      "signed_volume_z": -0.6369923603234829,
+      "trade_count_z": 2.7920507022052976
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3487508594392575,
+      "expected_move_1h": 0.005488684714368255,
+      "flat": 0.07571867638043145,
+      "threshold": 0.38502690422939406,
+      "up": 0.5755304641803111
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-03T19:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-05T20:30:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -1655.0750000008848,
+      "dollar_volume_z": 3.720536633739147,
+      "microprice_deviation_ewma": 0.0013238527571440108,
+      "ofi_15m": -0.17334198837990444,
+      "signed_volume_z": -4.123766330640008,
+      "trade_count_z": 3.394232130486813
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3487508594392575,
+      "expected_move_1h": 0.008778242963989156,
+      "flat": 0.07571867638043145,
+      "threshold": 0.38502690422939406,
+      "up": 0.5755304641803111
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-05T20:30:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-06T00:00:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -491.8512499994831,
+      "dollar_volume_z": 0.05777006113228034,
+      "microprice_deviation_ewma": 0.00037915801433520337,
+      "ofi_15m": -0.2814674853912923,
+      "signed_volume_z": -1.6598955235966766,
+      "trade_count_z": 0.24410506052795708
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.3487508594392575,
+      "expected_move_1h": 0.00946820478220614,
+      "flat": 0.07571867638043145,
+      "threshold": 0.38502690422939406,
+      "up": 0.5755304641803111
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-06T00:00:00+00:00",
+    "symbol": "BTC_USDT"
+  },
+  {
+    "as_of": "2026-02-03T18:15:00+00:00",
+    "flow_features": {
+      "cvd_slope_1h": -586.0667499999981,
+      "dollar_volume_z": 2.9353627569649885,
+      "microprice_deviation_ewma": 0.0019352379914555646,
+      "ofi_15m": -0.19301437054102796,
+      "signed_volume_z": -3.9298155124289162,
+      "trade_count_z": 2.243688580380157
+    },
+    "governor": {
+      "daily_loss_limit_r": -3.0,
+      "evening_bell_utc": 19,
+      "max_correlated": 2,
+      "max_positions": 3,
+      "risk_fraction": 0.02
+    },
+    "model_probability": {
+      "down": 0.34644921519601907,
+      "expected_move_1h": 0.004960290360005778,
+      "flat": 0.08181863780006006,
+      "threshold": 0.38502690422939406,
+      "up": 0.5717321470039209
+    },
+    "position": {
+      "open": false,
+      "symbol": null
+    },
+    "quant": {
+      "action": "flat",
+      "approved": false,
+      "quantity": 0.0,
+      "reason": "quant-gates"
+    },
+    "regime": {
+      "aligned_timeframes": 2,
+      "direction": "bear",
+      "label": "TRANSITION"
+    },
+    "snapshot_id": "fold-5-2026-02-03T18:15:00+00:00",
+    "symbol": "BTC_USDT"
+  }
+]
