@@ -1,0 +1,1203 @@
+{
+  "baseline_003": {
+    "end": "2026-10-31T00:00:00+00:00",
+    "execution_timeframe": "15m",
+    "folds": [
+      {
+        "cooldown_violations": 0,
+        "fold": 1,
+        "selected_volatility_percentile": 0.975,
+        "test": {
+          "deflated_sharpe": 0.1351537269053804,
+          "expectancy_r": -0.2096198461317987,
+          "exposure": 0.012977430555555556,
+          "max_drawdown": 0.220514619961049,
+          "net_pnl": -17.070808025457904,
+          "pbo_permutation": 0.9065,
+          "profit_factor": 0.5736753267089908,
+          "regime_attribution": {
+            "RANGE": {
+              "net_pnl": -1.613899528787172,
+              "sum_r": -0.8836320240072785,
+              "trades": 3
+            },
+            "TREND": {
+              "net_pnl": -15.456908496670732,
+              "sum_r": -7.920401513528267,
+              "trades": 39
+            }
+          },
+          "sharpe_ci_95": [
+            -10.712049960212426,
+            -10.712049960212426
+          ],
+          "sharpe_daily": -10.712049960212426,
+          "sortino_daily": -11.328363472886208,
+          "strategy_attribution": {
+            "band_rejection": {
+              "TREND": {
+                "gross_loss": 38.42790216586954,
+                "gross_profit": 22.97099366919882,
+                "net_pnl": -15.456908496670732,
+                "sum_r": -7.920401513528267,
+                "trades": 39,
+                "wins": 9
+              }
+            },
+            "mean_reversion": {
+              "RANGE": {
+                "gross_loss": 1.613899528787172,
+                "gross_profit": 0.0,
+                "net_pnl": -1.613899528787172,
+                "sum_r": -0.8836320240072785,
+                "trades": 3,
+                "wins": 0
+              }
+            }
+          },
+          "trades": 42,
+          "turnover": 233.21105533314363,
+          "win_rate": 0.21428571428571427
+        },
+        "test_end": "2026-10-21T00:00:00+00:00",
+        "test_start": "2026-10-16T00:00:00+00:00",
+        "train_end": "2026-10-16T00:00:00+00:00",
+        "train_grid": [
+          {
+            "train_sharpe": -0.9841539089951548,
+            "train_trades": 97,
+            "volatility_percentile": 0.9
+          },
+          {
+            "train_sharpe": -1.214466822591505,
+            "train_trades": 90,
+            "volatility_percentile": 0.95
+          },
+          {
+            "train_sharpe": -0.9265693397243446,
+            "train_trades": 87,
+            "volatility_percentile": 0.975
+          }
+        ],
+        "train_start": "2026-10-01T00:00:00+00:00"
+      },
+      {
+        "cooldown_violations": 0,
+        "fold": 2,
+        "selected_volatility_percentile": 0.975,
+        "test": {
+          "deflated_sharpe": 0.0009067489919017957,
+          "expectancy_r": -0.2293879073777485,
+          "exposure": 0.01423611111111111,
+          "max_drawdown": 0.17712729219252352,
+          "net_pnl": -17.712729219252353,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.5655730598787844,
+          "regime_attribution": {
+            "RANGE": {
+              "net_pnl": -4.4573377308412,
+              "sum_r": -2.6733681016228172,
+              "trades": 4
+            },
+            "TREND": {
+              "net_pnl": -13.255391488411155,
+              "sum_r": -6.502148193487125,
+              "trades": 36
+            }
+          },
+          "sharpe_ci_95": [
+            -31.525192734537786,
+            -31.52519273453778
+          ],
+          "sharpe_daily": -31.52519273453778,
+          "sortino_daily": -16.7962021211145,
+          "strategy_attribution": {
+            "band_rejection": {
+              "TREND": {
+                "gross_loss": 36.315293023388904,
+                "gross_profit": 23.059901534977747,
+                "net_pnl": -13.255391488411155,
+                "sum_r": -6.502148193487125,
+                "trades": 36,
+                "wins": 8
+              }
+            },
+            "mean_reversion": {
+              "RANGE": {
+                "gross_loss": 4.4573377308412,
+                "gross_profit": 0.0,
+                "net_pnl": -4.4573377308412,
+                "sum_r": -2.6733681016228172,
+                "trades": 4,
+                "wins": 0
+              }
+            }
+          },
+          "trades": 40,
+          "turnover": 272.2222449676018,
+          "win_rate": 0.2
+        },
+        "test_end": "2026-10-26T00:00:00+00:00",
+        "test_start": "2026-10-21T00:00:00+00:00",
+        "train_end": "2026-10-21T00:00:00+00:00",
+        "train_grid": [
+          {
+            "train_sharpe": -1.7570283736579664,
+            "train_trades": 137,
+            "volatility_percentile": 0.9
+          },
+          {
+            "train_sharpe": -1.9885066041276553,
+            "train_trades": 132,
+            "volatility_percentile": 0.95
+          },
+          {
+            "train_sharpe": -1.7388775298535226,
+            "train_trades": 129,
+            "volatility_percentile": 0.975
+          }
+        ],
+        "train_start": "2026-10-01T00:00:00+00:00"
+      },
+      {
+        "cooldown_violations": 0,
+        "fold": 3,
+        "selected_volatility_percentile": 0.975,
+        "test": {
+          "deflated_sharpe": 1.0245142512133043e-09,
+          "expectancy_r": -0.5250721163043044,
+          "exposure": 0.008897569444444444,
+          "max_drawdown": 0.3385111822758962,
+          "net_pnl": -34.223698177778175,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.26574894605343824,
+          "regime_attribution": {
+            "TREND": {
+              "net_pnl": -34.22369817777818,
+              "sum_r": -20.47781253586787,
+              "trades": 39
+            }
+          },
+          "sharpe_ci_95": [
+            -159.49543078155028,
+            -159.49543078155028
+          ],
+          "sharpe_daily": -159.49543078155028,
+          "sortino_daily": -18.99625966250285,
+          "strategy_attribution": {
+            "band_rejection": {
+              "TREND": {
+                "gross_loss": 46.61034940818614,
+                "gross_profit": 12.386651230407963,
+                "net_pnl": -34.22369817777818,
+                "sum_r": -20.47781253586787,
+                "trades": 39,
+                "wins": 3
+              }
+            }
+          },
+          "trades": 39,
+          "turnover": 211.74451138604934,
+          "win_rate": 0.07692307692307693
+        },
+        "test_end": "2026-10-31T00:00:00+00:00",
+        "test_start": "2026-10-26T00:00:00+00:00",
+        "train_end": "2026-10-26T00:00:00+00:00",
+        "train_grid": [
+          {
+            "train_sharpe": -2.535824094113572,
+            "train_trades": 178,
+            "volatility_percentile": 0.9
+          },
+          {
+            "train_sharpe": -2.498506651415669,
+            "train_trades": 171,
+            "volatility_percentile": 0.95
+          },
+          {
+            "train_sharpe": -2.2878765161141823,
+            "train_trades": 169,
+            "volatility_percentile": 0.975
+          }
+        ],
+        "train_start": "2026-10-01T00:00:00+00:00"
+      }
+    ],
+    "gates": {
+      "churn_free": true,
+      "max_drawdown": false,
+      "profit_factor": false,
+      "trade_count": true
+    },
+    "metrics": {
+      "deflated_sharpe": 0.010448666013612717,
+      "expectancy_r": -0.3178294410620938,
+      "exposure": 0.012037037037037037,
+      "max_drawdown": 0.7051843034147451,
+      "net_pnl": -69.00723542248844,
+      "pbo_permutation": 0.9995,
+      "profit_factor": 0.45844729402879447,
+      "regime_attribution": {
+        "RANGE": {
+          "net_pnl": -6.071237259628372,
+          "sum_r": -3.5570001256300956,
+          "trades": 7
+        },
+        "TREND": {
+          "net_pnl": -62.93599816286006,
+          "sum_r": -34.90036224288326,
+          "trades": 114
+        }
+      },
+      "sharpe_ci_95": [
+        -48.14394373301593,
+        -13.945768176394152
+      ],
+      "sharpe_daily": -22.814622634328366,
+      "sortino_daily": -15.473369288760894,
+      "strategy_attribution": {
+        "band_rejection": {
+          "TREND": {
+            "gross_loss": 121.3535445974445,
+            "gross_profit": 58.41754643458453,
+            "net_pnl": -62.93599816286006,
+            "sum_r": -34.90036224288326,
+            "trades": 114,
+            "wins": 20
+          }
+        },
+        "mean_reversion": {
+          "RANGE": {
+            "gross_loss": 6.071237259628372,
+            "gross_profit": 0.0,
+            "net_pnl": -6.071237259628372,
+            "sum_r": -3.5570001256300956,
+            "trades": 7,
+            "wins": 0
+          }
+        }
+      },
+      "trades": 121,
+      "turnover": 717.1778116867947,
+      "win_rate": 0.1652892561983471
+    },
+    "name": "Desk 30d flow (48 symbols)",
+    "oos_decisions": 53855,
+    "passed": false,
+    "selected_train_and_test_trades": 506,
+    "start": "2026-10-01T00:00:00+00:00",
+    "symbols": 48
+  },
+  "diagnosis": "Flow-002 fails. The learned model does not repair the flow baseline. STOP: this is the final experiment in the line.",
+  "experiment": "flow-002",
+  "flow_001": {
+    "end": "2026-10-31T00:00:00+00:00",
+    "execution_timeframe": "15m",
+    "folds": [
+      {
+        "cooldown_violations": 0,
+        "fold": 1,
+        "selected_absorption_log_odds": 3.0,
+        "selected_cvd_slope_quantile": 0.9,
+        "test": {
+          "deflated_sharpe": 0.082086613780544,
+          "expectancy_r": -0.2858921784268024,
+          "exposure": 0.013454861111111112,
+          "max_drawdown": 0.28966117647494843,
+          "net_pnl": -25.15439906004692,
+          "pbo_permutation": 0.9385,
+          "profit_factor": 0.45280410124826576,
+          "regime_attribution": {
+            "RANGE": {
+              "net_pnl": 1.508525455230913,
+              "sum_r": 0.7501778558777803,
+              "trades": 1
+            },
+            "TRANSITION": {
+              "net_pnl": -3.9302163586685497,
+              "sum_r": -2.1658397281357855,
+              "trades": 21
+            },
+            "TREND": {
+              "net_pnl": -22.732708156609277,
+              "sum_r": -12.593054870655315,
+              "trades": 27
+            }
+          },
+          "sharpe_ci_95": [
+            -15.937270205848248,
+            -15.937270205848248
+          ],
+          "sharpe_daily": -15.937270205848248,
+          "sortino_daily": -13.780348512266405,
+          "strategy_attribution": {
+            "flow_continuation": {
+              "TREND": {
+                "gross_loss": 29.259146309864416,
+                "gross_profit": 6.52643815325514,
+                "net_pnl": -22.732708156609277,
+                "sum_r": -12.593054870655315,
+                "trades": 27,
+                "wins": 7
+              }
+            },
+            "spring_reversal": {
+              "RANGE": {
+                "gross_loss": 0.0,
+                "gross_profit": 1.508525455230913,
+                "net_pnl": 1.508525455230913,
+                "sum_r": 0.7501778558777803,
+                "trades": 1,
+                "wins": 1
+              },
+              "TRANSITION": {
+                "gross_loss": 16.7104947591371,
+                "gross_profit": 12.780278400468546,
+                "net_pnl": -3.9302163586685497,
+                "sum_r": -2.1658397281357855,
+                "trades": 21,
+                "wins": 10
+              }
+            }
+          },
+          "trades": 49,
+          "turnover": 216.86452963580564,
+          "win_rate": 0.3673469387755102
+        },
+        "train_grid": [
+          {
+            "absorption_log_odds": 1.0,
+            "cvd_slope_quantile": 0.6,
+            "train_sharpe": -31.687869274379555,
+            "train_trades": 145
+          },
+          {
+            "absorption_log_odds": 1.0,
+            "cvd_slope_quantile": 0.75,
+            "train_sharpe": -28.8063111089903,
+            "train_trades": 162
+          },
+          {
+            "absorption_log_odds": 1.0,
+            "cvd_slope_quantile": 0.9,
+            "train_sharpe": -13.613393334930162,
+            "train_trades": 158
+          },
+          {
+            "absorption_log_odds": 2.0,
+            "cvd_slope_quantile": 0.6,
+            "train_sharpe": -33.925092709087,
+            "train_trades": 145
+          },
+          {
+            "absorption_log_odds": 2.0,
+            "cvd_slope_quantile": 0.75,
+            "train_sharpe": -30.342984938663903,
+            "train_trades": 160
+          },
+          {
+            "absorption_log_odds": 2.0,
+            "cvd_slope_quantile": 0.9,
+            "train_sharpe": -11.88885391636122,
+            "train_trades": 160
+          },
+          {
+            "absorption_log_odds": 3.0,
+            "cvd_slope_quantile": 0.6,
+            "train_sharpe": -33.076746267963436,
+            "train_trades": 150
+          },
+          {
+            "absorption_log_odds": 3.0,
+            "cvd_slope_quantile": 0.75,
+            "train_sharpe": -29.765950225046424,
+            "train_trades": 166
+          },
+          {
+            "absorption_log_odds": 3.0,
+            "cvd_slope_quantile": 0.9,
+            "train_sharpe": -11.51805681294068,
+            "train_trades": 159
+          }
+        ]
+      },
+      {
+        "cooldown_violations": 0,
+        "fold": 2,
+        "selected_absorption_log_odds": 2.0,
+        "selected_cvd_slope_quantile": 0.9,
+        "test": {
+          "deflated_sharpe": 0.21571096709449267,
+          "expectancy_r": -0.14499438482331506,
+          "exposure": 0.016276041666666668,
+          "max_drawdown": 0.14088798595463822,
+          "net_pnl": -11.172509691115476,
+          "pbo_permutation": 0.7435,
+          "profit_factor": 0.6447139366001847,
+          "regime_attribution": {
+            "TRANSITION": {
+              "net_pnl": -11.843767270762477,
+              "sum_r": -5.885997217942025,
+              "trades": 22
+            },
+            "TREND": {
+              "net_pnl": 0.6712575796470002,
+              "sum_r": 0.5212049794793663,
+              "trades": 15
+            }
+          },
+          "sharpe_ci_95": [
+            -5.367547368579518,
+            -5.367547368579517
+          ],
+          "sharpe_daily": -5.367547368579517,
+          "sortino_daily": -7.863008513156596,
+          "strategy_attribution": {
+            "flow_continuation": {
+              "TREND": {
+                "gross_loss": 12.819251513521445,
+                "gross_profit": 13.490509093168445,
+                "net_pnl": 0.6712575796470002,
+                "sum_r": 0.5212049794793663,
+                "trades": 15,
+                "wins": 5
+              }
+            },
+            "spring_reversal": {
+              "TRANSITION": {
+                "gross_loss": 18.627266777128973,
+                "gross_profit": 6.7834995063664945,
+                "net_pnl": -11.843767270762477,
+                "sum_r": -5.885997217942025,
+                "trades": 22,
+                "wins": 9
+              }
+            }
+          },
+          "trades": 37,
+          "turnover": 138.07374403353026,
+          "win_rate": 0.3783783783783784
+        },
+        "train_grid": [
+          {
+            "absorption_log_odds": 1.0,
+            "cvd_slope_quantile": 0.6,
+            "train_sharpe": -31.163058243256593,
+            "train_trades": 187
+          },
+          {
+            "absorption_log_odds": 1.0,
+            "cvd_slope_quantile": 0.75,
+            "train_sharpe": -28.816850064991737,
+            "train_trades": 203
+          },
+          {
+            "absorption_log_odds": 1.0,
+            "cvd_slope_quantile": 0.9,
+            "train_sharpe": -14.80945967770958,
+            "train_trades": 206
+          },
+          {
+            "absorption_log_odds": 2.0,
+            "cvd_slope_quantile": 0.6,
+            "train_sharpe": -29.18819675702186,
+            "train_trades": 186
+          },
+          {
+            "absorption_log_odds": 2.0,
+            "cvd_slope_quantile": 0.75,
+            "train_sharpe": -27.157359478893476,
+            "train_trades": 199
+          },
+          {
+            "absorption_log_odds": 2.0,
+            "cvd_slope_quantile": 0.9,
+            "train_sharpe": -12.63309409924664,
+            "train_trades": 208
+          },
+          {
+            "absorption_log_odds": 3.0,
+            "cvd_slope_quantile": 0.6,
+            "train_sharpe": -29.30795638337837,
+            "train_trades": 191
+          },
+          {
+            "absorption_log_odds": 3.0,
+            "cvd_slope_quantile": 0.75,
+            "train_sharpe": -27.331363308318952,
+            "train_trades": 205
+          },
+          {
+            "absorption_log_odds": 3.0,
+            "cvd_slope_quantile": 0.9,
+            "train_sharpe": -12.721046959355636,
+            "train_trades": 208
+          }
+        ]
+      },
+      {
+        "cooldown_violations": 0,
+        "fold": 3,
+        "selected_absorption_log_odds": 2.0,
+        "selected_cvd_slope_quantile": 0.9,
+        "test": {
+          "deflated_sharpe": 0.0,
+          "expectancy_r": -0.4723648729014891,
+          "exposure": 0.007118055555555555,
+          "max_drawdown": 0.30020714025885836,
+          "net_pnl": -30.020714025885848,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.23954751186229525,
+          "regime_attribution": {
+            "TRANSITION": {
+              "net_pnl": -6.107599717372637,
+              "sum_r": -3.2480837372495186,
+              "trades": 15
+            },
+            "TREND": {
+              "net_pnl": -23.913114308513208,
+              "sum_r": -14.229416560105578,
+              "trades": 22
+            }
+          },
+          "sharpe_ci_95": [
+            -120.19859074887243,
+            -120.19859074887243
+          ],
+          "sharpe_daily": -120.19859074887243,
+          "sortino_daily": -18.914787563513627,
+          "strategy_attribution": {
+            "flow_continuation": {
+              "TREND": {
+                "gross_loss": 26.777081871207915,
+                "gross_profit": 2.8639675626947043,
+                "net_pnl": -23.913114308513208,
+                "sum_r": -14.229416560105578,
+                "trades": 22,
+                "wins": 2
+              }
+            },
+            "spring_reversal": {
+              "TRANSITION": {
+                "gross_loss": 12.700353595410768,
+                "gross_profit": 6.592753878038131,
+                "net_pnl": -6.107599717372637,
+                "sum_r": -3.2480837372495186,
+                "trades": 15,
+                "wins": 8
+              }
+            }
+          },
+          "trades": 37,
+          "turnover": 156.35994516213083,
+          "win_rate": 0.2702702702702703
+        },
+        "train_grid": [
+          {
+            "absorption_log_odds": 1.0,
+            "cvd_slope_quantile": 0.6,
+            "train_sharpe": -25.79871306507,
+            "train_trades": 234
+          },
+          {
+            "absorption_log_odds": 1.0,
+            "cvd_slope_quantile": 0.75,
+            "train_sharpe": -25.521001061465878,
+            "train_trades": 253
+          },
+          {
+            "absorption_log_odds": 1.0,
+            "cvd_slope_quantile": 0.9,
+            "train_sharpe": -12.670621252146486,
+            "train_trades": 244
+          },
+          {
+            "absorption_log_odds": 2.0,
+            "cvd_slope_quantile": 0.6,
+            "train_sharpe": -24.671308159048195,
+            "train_trades": 228
+          },
+          {
+            "absorption_log_odds": 2.0,
+            "cvd_slope_quantile": 0.75,
+            "train_sharpe": -24.185208383259575,
+            "train_trades": 239
+          },
+          {
+            "absorption_log_odds": 2.0,
+            "cvd_slope_quantile": 0.9,
+            "train_sharpe": -11.348272072655194,
+            "train_trades": 245
+          },
+          {
+            "absorption_log_odds": 3.0,
+            "cvd_slope_quantile": 0.6,
+            "train_sharpe": -24.663114134454105,
+            "train_trades": 233
+          },
+          {
+            "absorption_log_odds": 3.0,
+            "cvd_slope_quantile": 0.75,
+            "train_sharpe": -24.19896519494852,
+            "train_trades": 245
+          },
+          {
+            "absorption_log_odds": 3.0,
+            "cvd_slope_quantile": 0.9,
+            "train_sharpe": -11.411428924615123,
+            "train_trades": 245
+          }
+        ]
+      }
+    ],
+    "gates": {
+      "churn_free": true,
+      "expectancy_r": false,
+      "max_drawdown": false,
+      "profit_factor": false,
+      "trade_count": false
+    },
+    "metrics": {
+      "deflated_sharpe": 0.025417285558963054,
+      "expectancy_r": -0.2996017014530981,
+      "exposure": 0.01228298611111111,
+      "max_drawdown": 0.6806146287134376,
+      "net_pnl": -66.34762277704824,
+      "pbo_permutation": 0.994,
+      "profit_factor": 0.4324101087347405,
+      "regime_attribution": {
+        "RANGE": {
+          "net_pnl": 1.508525455230913,
+          "sum_r": 0.7501778558777803,
+          "trades": 1
+        },
+        "TRANSITION": {
+          "net_pnl": -21.88158334680366,
+          "sum_r": -11.299920683327327,
+          "trades": 58
+        },
+        "TREND": {
+          "net_pnl": -45.974564885475495,
+          "sum_r": -26.30126645128153,
+          "trades": 64
+        }
+      },
+      "sharpe_ci_95": [
+        -30.430239710016647,
+        -8.574060589996284
+      ],
+      "sharpe_daily": -15.066010008664835,
+      "sortino_daily": -13.654527507269195,
+      "strategy_attribution": {
+        "flow_continuation": {
+          "TREND": {
+            "gross_loss": 68.85547969459378,
+            "gross_profit": 22.880914809118288,
+            "net_pnl": -45.974564885475495,
+            "sum_r": -26.30126645128153,
+            "trades": 64,
+            "wins": 14
+          }
+        },
+        "spring_reversal": {
+          "RANGE": {
+            "gross_loss": 0.0,
+            "gross_profit": 1.508525455230913,
+            "net_pnl": 1.508525455230913,
+            "sum_r": 0.7501778558777803,
+            "trades": 1,
+            "wins": 1
+          },
+          "TRANSITION": {
+            "gross_loss": 48.03811513167685,
+            "gross_profit": 26.156531784873177,
+            "net_pnl": -21.88158334680366,
+            "sum_r": -11.299920683327327,
+            "trades": 58,
+            "wins": 27
+          }
+        }
+      },
+      "trades": 123,
+      "turnover": 511.2982188314667,
+      "win_rate": 0.34146341463414637
+    },
+    "name": "Desk 30d flow (48 symbols)",
+    "passed": false,
+    "start": "2026-10-01T00:00:00+00:00",
+    "symbols": 48
+  },
+  "gate_verdict": "FAIL",
+  "model": "lightgbm-4.7.0",
+  "replays": {
+    "passed": true,
+    "sessions": [
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-08",
+        "minimum_daily_r": -1.893401551220965,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 4
+      },
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-16",
+        "minimum_daily_r": 0.0,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 0
+      },
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-22",
+        "minimum_daily_r": 0.0,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 0
+      },
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-27",
+        "minimum_daily_r": 0.0,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 0
+      },
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-29",
+        "minimum_daily_r": 0.0,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 0
+      }
+    ]
+  },
+  "seed": 20261102,
+  "track": {
+    "end": "2026-10-31T00:00:00+00:00",
+    "execution_timeframe": "15m",
+    "folds": [
+      {
+        "accuracy_flat_excluded": 0.525023265432737,
+        "auc_flat_excluded": 0.5285188339164616,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "count": 0,
+            "empirical_up_rate": 0.0,
+            "mean_up_probability": 0.0
+          },
+          {
+            "bin": "0.2-0.4",
+            "count": 763,
+            "empirical_up_rate": 0.5216251638269986,
+            "mean_up_probability": 0.3761694632536027
+          },
+          {
+            "bin": "0.4-0.6",
+            "count": 17439,
+            "empirical_up_rate": 0.4760594070760938,
+            "mean_up_probability": 0.49051032955133655
+          },
+          {
+            "bin": "0.6-0.8",
+            "count": 1133,
+            "empirical_up_rate": 0.5825242718446602,
+            "mean_up_probability": 0.6534936668743255
+          },
+          {
+            "bin": "0.8-1.0",
+            "count": 7,
+            "empirical_up_rate": 0.5714285714285714,
+            "mean_up_probability": 0.8084244455592852
+          }
+        ],
+        "cooldown_violations": 0,
+        "feature_importances": [
+          {
+            "feature": "atr_pct",
+            "gain": 0.569061599227759
+          },
+          {
+            "feature": "cvd_slope_pct",
+            "gain": 0.08083163434840555
+          },
+          {
+            "feature": "bb_width_pct",
+            "gain": 0.04213661341173611
+          },
+          {
+            "feature": "realized_vol_pct",
+            "gain": 0.04140732302112672
+          },
+          {
+            "feature": "return_1h",
+            "gain": 0.039840116256953134
+          },
+          {
+            "feature": "distance_ema9",
+            "gain": 0.02409480146660139
+          },
+          {
+            "feature": "rsi3",
+            "gain": 0.01742510702426776
+          },
+          {
+            "feature": "distance_bb_mid",
+            "gain": 0.017235236025395877
+          },
+          {
+            "feature": "trend_4h",
+            "gain": 0.015861078197685806
+          },
+          {
+            "feature": "cls5_cls6_count_ratio_6h",
+            "gain": 0.013886839376993483
+          }
+        ],
+        "flat_excluded_rows": 19342,
+        "fold": 1,
+        "probability_threshold": 0.6,
+        "test": {
+          "deflated_sharpe": 0.04145202681746263,
+          "expectancy_r": -1.0,
+          "exposure": 8.680555555555556e-05,
+          "max_drawdown": 0.03959999999999994,
+          "net_pnl": -3.9600000000000004,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.0,
+          "regime_attribution": {
+            "TRANSITION": {
+              "net_pnl": -1.96,
+              "sum_r": -0.9999999999999999,
+              "trades": 1
+            },
+            "TREND": {
+              "net_pnl": -2.0000000000000004,
+              "sum_r": -1.0,
+              "trades": 1
+            }
+          },
+          "sharpe_ci_95": [
+            -13.951113543256836,
+            -13.951113543256836
+          ],
+          "sharpe_daily": -13.951113543256836,
+          "sortino_daily": -12.082429601723145,
+          "strategy_attribution": {
+            "learned_flow": {
+              "TRANSITION": {
+                "gross_loss": 1.96,
+                "gross_profit": 0.0,
+                "net_pnl": -1.96,
+                "sum_r": -0.9999999999999999,
+                "trades": 1,
+                "wins": 0
+              },
+              "TREND": {
+                "gross_loss": 2.0000000000000004,
+                "gross_profit": 0.0,
+                "net_pnl": -2.0000000000000004,
+                "sum_r": -1.0,
+                "trades": 1,
+                "wins": 0
+              }
+            }
+          },
+          "trades": 2,
+          "turnover": 11.407792931090684,
+          "win_rate": 0.0
+        }
+      },
+      {
+        "accuracy_flat_excluded": 0.5294884497053762,
+        "auc_flat_excluded": 0.5279512493460212,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "count": 0,
+            "empirical_up_rate": 0.0,
+            "mean_up_probability": 0.0
+          },
+          {
+            "bin": "0.2-0.4",
+            "count": 371,
+            "empirical_up_rate": 0.3692722371967655,
+            "mean_up_probability": 0.37915987996383604
+          },
+          {
+            "bin": "0.4-0.6",
+            "count": 17786,
+            "empirical_up_rate": 0.4343303722028562,
+            "mean_up_probability": 0.48815994507378285
+          },
+          {
+            "bin": "0.6-0.8",
+            "count": 1019,
+            "empirical_up_rate": 0.5868498527968596,
+            "mean_up_probability": 0.6468381106277492
+          },
+          {
+            "bin": "0.8-1.0",
+            "count": 1,
+            "empirical_up_rate": 1.0,
+            "mean_up_probability": 0.8191952167820343
+          }
+        ],
+        "cooldown_violations": 0,
+        "feature_importances": [
+          {
+            "feature": "atr_pct",
+            "gain": 0.6063937515347406
+          },
+          {
+            "feature": "cvd_slope_pct",
+            "gain": 0.05394600608876104
+          },
+          {
+            "feature": "realized_vol_pct",
+            "gain": 0.04746778360923856
+          },
+          {
+            "feature": "bb_width_pct",
+            "gain": 0.04245444882531974
+          },
+          {
+            "feature": "return_1h",
+            "gain": 0.04159158697386897
+          },
+          {
+            "feature": "distance_ema9",
+            "gain": 0.0264938239909058
+          },
+          {
+            "feature": "return_15m",
+            "gain": 0.017290364395342095
+          },
+          {
+            "feature": "distance_bb_mid",
+            "gain": 0.01611047501746803
+          },
+          {
+            "feature": "rsi3",
+            "gain": 0.015403181942584313
+          },
+          {
+            "feature": "trend_1h",
+            "gain": 0.0130598427008461
+          }
+        ],
+        "flat_excluded_rows": 19177,
+        "fold": 2,
+        "probability_threshold": 0.6,
+        "test": {
+          "deflated_sharpe": 0.10963264964189823,
+          "expectancy_r": -1.0000000000000002,
+          "exposure": 4.340277777777778e-05,
+          "max_drawdown": 0.02,
+          "net_pnl": -1.9999999999999998,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.0,
+          "regime_attribution": {
+            "TRANSITION": {
+              "net_pnl": -1.9999999999999998,
+              "sum_r": -1.0000000000000002,
+              "trades": 1
+            }
+          },
+          "sharpe_ci_95": [
+            -8.544003745317532,
+            -8.54400374531753
+          ],
+          "sharpe_daily": -8.54400374531753,
+          "sortino_daily": -8.544003745317532,
+          "strategy_attribution": {
+            "learned_flow": {
+              "TRANSITION": {
+                "gross_loss": 1.9999999999999998,
+                "gross_profit": 0.0,
+                "net_pnl": -1.9999999999999998,
+                "sum_r": -1.0000000000000002,
+                "trades": 1,
+                "wins": 0
+              }
+            }
+          },
+          "trades": 1,
+          "turnover": 11.08594515139125,
+          "win_rate": 0.0
+        }
+      },
+      {
+        "accuracy_flat_excluded": 0.49838089455575796,
+        "auc_flat_excluded": 0.49934594979005487,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "count": 0,
+            "empirical_up_rate": 0.0,
+            "mean_up_probability": 0.0
+          },
+          {
+            "bin": "0.2-0.4",
+            "count": 170,
+            "empirical_up_rate": 0.48823529411764705,
+            "mean_up_probability": 0.37855963353153504
+          },
+          {
+            "bin": "0.4-0.6",
+            "count": 16409,
+            "empirical_up_rate": 0.4965567676275215,
+            "mean_up_probability": 0.49803615211467867
+          },
+          {
+            "bin": "0.6-0.8",
+            "count": 3145,
+            "empirical_up_rate": 0.47472178060413356,
+            "mean_up_probability": 0.6691634503699014
+          },
+          {
+            "bin": "0.8-1.0",
+            "count": 40,
+            "empirical_up_rate": 0.625,
+            "mean_up_probability": 0.8124537745818126
+          }
+        ],
+        "cooldown_violations": 0,
+        "feature_importances": [
+          {
+            "feature": "atr_pct",
+            "gain": 0.6376916431738261
+          },
+          {
+            "feature": "realized_vol_pct",
+            "gain": 0.050058240487385934
+          },
+          {
+            "feature": "bb_width_pct",
+            "gain": 0.04694334910233284
+          },
+          {
+            "feature": "return_1h",
+            "gain": 0.03535530229989901
+          },
+          {
+            "feature": "cvd_slope_pct",
+            "gain": 0.032858728860019906
+          },
+          {
+            "feature": "distance_ema9",
+            "gain": 0.022719764270145625
+          },
+          {
+            "feature": "trend_4h",
+            "gain": 0.015690859164309123
+          },
+          {
+            "feature": "distance_bb_mid",
+            "gain": 0.014984940619043643
+          },
+          {
+            "feature": "rsi3",
+            "gain": 0.013930325502844135
+          },
+          {
+            "feature": "return_15m",
+            "gain": 0.013819438712744011
+          }
+        ],
+        "flat_excluded_rows": 19764,
+        "fold": 3,
+        "probability_threshold": 0.6,
+        "test": {
+          "deflated_sharpe": 0.0,
+          "expectancy_r": 0.0,
+          "exposure": 0.0,
+          "max_drawdown": 0.0,
+          "net_pnl": 0,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.0,
+          "regime_attribution": {},
+          "sharpe_ci_95": [
+            0.0,
+            0.0
+          ],
+          "sharpe_daily": 0.0,
+          "sortino_daily": 0.0,
+          "strategy_attribution": {},
+          "trades": 0,
+          "turnover": 0.0,
+          "win_rate": 0.0
+        }
+      }
+    ],
+    "gates": {
+      "churn_free": true,
+      "expectancy_r": false,
+      "max_drawdown": true,
+      "profit_factor": false,
+      "trade_count": false
+    },
+    "metrics": {
+      "deflated_sharpe": 0.0027454069112722856,
+      "expectancy_r": -1.0,
+      "exposure": 4.340277777777778e-05,
+      "max_drawdown": 0.05959999999999994,
+      "net_pnl": -5.96,
+      "pbo_permutation": 1.0,
+      "profit_factor": 0.0,
+      "regime_attribution": {
+        "TRANSITION": {
+          "net_pnl": -3.96,
+          "sum_r": -2.0,
+          "trades": 2
+        },
+        "TREND": {
+          "net_pnl": -2.0000000000000004,
+          "sum_r": -1.0,
+          "trades": 1
+        }
+      },
+      "sharpe_ci_95": [
+        -15.068924887982282,
+        0.0
+      ],
+      "sharpe_daily": -9.228059240038338,
+      "sortino_daily": -8.543618923619539,
+      "strategy_attribution": {
+        "learned_flow": {
+          "TRANSITION": {
+            "gross_loss": 3.96,
+            "gross_profit": 0.0,
+            "net_pnl": -3.96,
+            "sum_r": -2.0,
+            "trades": 2,
+            "wins": 0
+          },
+          "TREND": {
+            "gross_loss": 2.0000000000000004,
+            "gross_profit": 0.0,
+            "net_pnl": -2.0000000000000004,
+            "sum_r": -1.0,
+            "trades": 1,
+            "wins": 0
+          }
+        }
+      },
+      "trades": 3,
+      "turnover": 22.493738082481933,
+      "win_rate": 0.0
+    },
+    "name": "Desk 30d flow (48 symbols)",
+    "passed": false,
+    "start": "2026-10-01T00:00:00+00:00",
+    "symbols": 48
+  }
+}

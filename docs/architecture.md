@@ -18,6 +18,9 @@ Baseline-003 removes momentum, executes on completed 15m bars, and uses only the
 structural stop, +1R breakeven, and 15m 3×ATR chandelier for swing trend exits.
 P2a pivots to flow-first entries: bands supply regime/structure only, cls5/cls6
 intensity and CVD confirm 15m spring reclaims or with-trend continuation resumes.
+Flow-002 replaces hand thresholds with a native LightGBM multiclass Booster over
+causal flow, band, and price context; probabilities still pass the 15m structure
+gate and sovereign governor before any entry.
 
 P1 evaluates the deterministic ensemble with three expanding walk-forward folds
 and a preregistered three-value regime grid. Later phases add a selectively

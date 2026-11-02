@@ -28,3 +28,8 @@ P2a flow-001 uses the same folds, costs, governor, and 15m swing exits. Its two
 parameters form a preregistered 3×3 train-only grid; gates add E[R] > +0.3R and
 require at least 200 OOS trades. Real tick samples validate delta/CVD semantics
 only, never performance. See `experiments/flow-001/report.md`.
+
+Flow-002 trains one model per fold on pooled symbols, labels 1h forward returns
+into down/flat/up with a ±0.1% noise band, and selects probability thresholds by
+train macro-F1. Reports include flat-excluded accuracy/AUC, gain importance,
+calibration bins, and the same trading/safety gates. See `experiments/flow-002/`.

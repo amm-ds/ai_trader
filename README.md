@@ -37,6 +37,8 @@ P1 is complete with **three failed baselines, not a profitable system**. [Baseli
 
 P2a [flow-001](experiments/flow-001/report.md) also fails: 123 OOS trades, 34.15% WR, −0.2996 E[R], PF 0.432, max DD 68.06%, and turnover 511.30x. All four tick-ground-truth checks pass, but the 2026-10-08 disaster replay fails at −3.151R. The overall gate is **FAIL**, so P2b does not proceed.
 
+Final learned experiment [flow-002](experiments/flow-002/report.md) uses native LightGBM 4.7.0 and produces only three OOS trades, all stopped (−1.0000 E[R], PF 0.000, max DD 5.96%). Flat-excluded AUC is 0.499–0.529, all five disaster replays pass, but the overall gate is **FAIL**. This is the final experiment in the flow-model line.
+
 ## Quickstart
 
 ```bash

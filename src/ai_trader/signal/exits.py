@@ -12,7 +12,13 @@ from ai_trader.features.indicators import completed_history
 from ai_trader.signal.band_rejection import Side
 
 CHANDELIER_ATR_MULTIPLE = 3.0
-TREND_STRATEGIES = ("band_rejection", "momentum", "spring_reversal", "flow_continuation")
+TREND_STRATEGIES = (
+    "band_rejection",
+    "momentum",
+    "spring_reversal",
+    "flow_continuation",
+    "learned_flow",
+)
 
 
 def trend_target(
