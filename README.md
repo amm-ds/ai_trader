@@ -39,6 +39,8 @@ P2a [flow-001](experiments/flow-001/report.md) also fails: 123 OOS trades, 34.15
 
 Final learned experiment [flow-002](experiments/flow-002/report.md) uses native LightGBM 4.7.0 and produces only three OOS trades, all stopped (−1.0000 E[R], PF 0.000, max DD 5.96%). Flat-excluded AUC is 0.499–0.529, all five disaster replays pass, but the overall gate is **FAIL**. This is the final experiment in the flow-model line.
 
+Deep-data [edge-001](experiments/edge-001/report.md) materializes 3,683 BTC files (3.63B ticks, 241,871 bars) and uses purged OOF isotonic LightGBM. AUC is 0.526–0.564, but probability plus cost gates produce **zero OOS trades**. Buy-and-hold Sharpe is 0.863 versus 0.000 for edge-001. Tick sanity and all disaster replays pass, but the overall gate is **FAIL**; the AI layer is not authorized. ETH/SOL remain pending.
+
 ## Quickstart
 
 ```bash

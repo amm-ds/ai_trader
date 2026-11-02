@@ -18,6 +18,7 @@ TREND_STRATEGIES = (
     "spring_reversal",
     "flow_continuation",
     "learned_flow",
+    "micro_edge",
 )
 
 

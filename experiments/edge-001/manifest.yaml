@@ -1,0 +1,19 @@
+experiment: edge-001
+phase: E1-deep-microstructure
+parents: [baseline-003, flow-001, flow-002]
+model: native_lightgbm_booster_oof_isotonic
+calibration: sklearn.IsotonicRegression
+folds: 5_expanding_purged_1d_embargo
+inner_oof_folds: 3
+flat_bands: [0.0008, 0.0010, 0.0015]
+threshold_quantiles: [0.6, 0.7, 0.8]
+round_trip_cost: 0.0022
+execution: 15m
+exits: structural_stop_1r_breakeven_3atr_chandelier
+feature_scope: [aggressor_pressure, OFI, microprice_EWMA, trade_count, dollar_volume, signed_volume_z, CVD_slope, sweeps, band_regime]
+materialization:
+  files: 3683
+  ticks: 3630031122
+  rows: 241871
+  ticks_per_second: 1527401
+eth_sol: pending

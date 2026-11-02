@@ -29,7 +29,7 @@ dev = [
   "ruff>=0.8,<1",
 ]
 # Optional tabular baseline; the deterministic P1 ensemble does not require it.
-ml = ["lightgbm>=4,<5"]
+ml = ["lightgbm>=4,<5", "scikit-learn>=1.5,<2"]
 # dl = []
 # rl = []
 

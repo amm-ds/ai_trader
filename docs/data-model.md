@@ -14,6 +14,10 @@ after `t`. Legacy raw flow windows are left-open/right-closed `(as_of-window,
 as_of]`; P2a feature aggregation uses right-exclusive event bins `[open, close)`.
 Delta/CVD, cls5/cls6 intensity, sweeps, and divergence are computed only from
 current and past events. Tick aggressor is `buy` when `is_buyer_maker` is false.
+Deep-lake readers also accept `timestamp`, `qty`/`amount`, and `quote_qty`/`cost`.
+Daily chunks are resumable under `data/materialized/_chunks` with per-symbol
+progress; consolidation produces `<SYM>_15m_features.parquet`. Microprice is
+bar VWAP, OFI uses signed aggressor imbalance, and sweeps use prior prints only.
 
 The archive is opened read-only. Tests prove bin boundaries, incomplete-bin
 omission, and feature invariance when future bars change.

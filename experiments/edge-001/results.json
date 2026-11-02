@@ -1,0 +1,960 @@
+{
+  "baseline_003": {
+    "end": "2026-09-09T00:00:00+00:00",
+    "execution_timeframe": "15m",
+    "folds": [
+      {
+        "cooldown_violations": 0,
+        "fold": 1,
+        "selected_volatility_percentile": 0.9,
+        "test": {
+          "deflated_sharpe": 5.4385576389814894e-05,
+          "expectancy_r": -0.4559051673102106,
+          "exposure": 0.0878171031096563,
+          "max_drawdown": 0.9875533092081297,
+          "net_pnl": -98.70753073523436,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.3308689055233811,
+          "regime_attribution": {
+            "RANGE": {
+              "net_pnl": -5.101285268797689,
+              "sum_r": -17.660953762148367,
+              "trades": 27
+            },
+            "TREND": {
+              "net_pnl": -93.60624546643675,
+              "sum_r": -192.96723353516893,
+              "trades": 435
+            }
+          },
+          "sharpe_ci_95": [
+            -7.919453081472202,
+            -3.195281464321498
+          ],
+          "sharpe_daily": -5.073855055198116,
+          "sortino_daily": -6.67014546464851,
+          "strategy_attribution": {
+            "band_rejection": {
+              "TREND": {
+                "gross_loss": 142.41469710001076,
+                "gross_profit": 48.80845163357402,
+                "net_pnl": -93.60624546643675,
+                "sum_r": -192.96723353516893,
+                "trades": 435,
+                "wins": 56
+              }
+            },
+            "mean_reversion": {
+              "RANGE": {
+                "gross_loss": 5.101285268797689,
+                "gross_profit": 0.0,
+                "net_pnl": -5.101285268797689,
+                "sum_r": -17.660953762148367,
+                "trades": 27,
+                "wins": 0
+              }
+            }
+          },
+          "trades": 462,
+          "turnover": 968.3000917939696,
+          "win_rate": 0.12121212121212122
+        },
+        "test_end": "2024-06-16T08:00:00+00:00",
+        "test_start": "2023-05-06T00:00:00+00:00",
+        "train_end": "2023-05-06T00:00:00+00:00",
+        "train_grid": [
+          {
+            "train_sharpe": -3.0959413953713986,
+            "train_trades": 1497,
+            "volatility_percentile": 0.9
+          },
+          {
+            "train_sharpe": -3.6032432888424477,
+            "train_trades": 1594,
+            "volatility_percentile": 0.95
+          },
+          {
+            "train_sharpe": -3.6540155643502974,
+            "train_trades": 1640,
+            "volatility_percentile": 0.975
+          }
+        ],
+        "train_start": "2019-12-31T00:00:00+00:00"
+      },
+      {
+        "cooldown_violations": 0,
+        "fold": 2,
+        "selected_volatility_percentile": 0.9,
+        "test": {
+          "deflated_sharpe": 6.881334391195537e-10,
+          "expectancy_r": -0.45683057401533855,
+          "exposure": 0.08472279050736498,
+          "max_drawdown": 0.9881840799444056,
+          "net_pnl": -98.84203983455173,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.23918702069365796,
+          "regime_attribution": {
+            "RANGE": {
+              "net_pnl": -7.991974311648607,
+              "sum_r": -22.027093884063085,
+              "trades": 35
+            },
+            "TREND": {
+              "net_pnl": -90.85006552290318,
+              "sum_r": -195.42425934723806,
+              "trades": 441
+            }
+          },
+          "sharpe_ci_95": [
+            -9.629630359228631,
+            -4.4573072013533706
+          ],
+          "sharpe_daily": -6.845981349143468,
+          "sortino_daily": -7.316712762061627,
+          "strategy_attribution": {
+            "band_rejection": {
+              "TREND": {
+                "gross_loss": 121.92436849926048,
+                "gross_profit": 31.074302976357234,
+                "net_pnl": -90.85006552290318,
+                "sum_r": -195.42425934723806,
+                "trades": 441,
+                "wins": 70
+              }
+            },
+            "mean_reversion": {
+              "RANGE": {
+                "gross_loss": 7.991974311648607,
+                "gross_profit": 0.0,
+                "net_pnl": -7.991974311648607,
+                "sum_r": -22.027093884063085,
+                "trades": 35,
+                "wins": 0
+              }
+            }
+          },
+          "trades": 476,
+          "turnover": 789.3399999628854,
+          "win_rate": 0.14705882352941177
+        },
+        "test_end": "2025-07-28T16:00:00+00:00",
+        "test_start": "2024-06-16T08:00:00+00:00",
+        "train_end": "2024-06-16T08:00:00+00:00",
+        "train_grid": [
+          {
+            "train_sharpe": -2.672951572900409,
+            "train_trades": 1959,
+            "volatility_percentile": 0.9
+          },
+          {
+            "train_sharpe": -3.1073504864551778,
+            "train_trades": 2073,
+            "volatility_percentile": 0.95
+          },
+          {
+            "train_sharpe": -3.150741027625152,
+            "train_trades": 2133,
+            "volatility_percentile": 0.975
+          }
+        ],
+        "train_start": "2019-12-31T00:00:00+00:00"
+      },
+      {
+        "cooldown_violations": 0,
+        "fold": 3,
+        "selected_volatility_percentile": 0.9,
+        "test": {
+          "deflated_sharpe": 4.581444531248646e-06,
+          "expectancy_r": -0.4142935741213723,
+          "exposure": 0.09201104746317512,
+          "max_drawdown": 0.9824520638726275,
+          "net_pnl": -97.94223934669932,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.3463166980170654,
+          "regime_attribution": {
+            "RANGE": {
+              "net_pnl": -12.07189340926127,
+              "sum_r": -21.773583895123473,
+              "trades": 32
+            },
+            "TREND": {
+              "net_pnl": -85.87034593743802,
+              "sum_r": -165.48711160773678,
+              "trades": 420
+            }
+          },
+          "sharpe_ci_95": [
+            -8.262710823073721,
+            -3.1067632524012914
+          ],
+          "sharpe_daily": -5.410940070348864,
+          "sortino_daily": -6.75898447274158,
+          "strategy_attribution": {
+            "band_rejection": {
+              "TREND": {
+                "gross_loss": 137.74920445326202,
+                "gross_profit": 51.878858515824035,
+                "net_pnl": -85.87034593743802,
+                "sum_r": -165.48711160773678,
+                "trades": 420,
+                "wins": 73
+              }
+            },
+            "mean_reversion": {
+              "RANGE": {
+                "gross_loss": 12.082126788630715,
+                "gross_profit": 0.010233379369445149,
+                "net_pnl": -12.07189340926127,
+                "sum_r": -21.773583895123473,
+                "trades": 32,
+                "wins": 1
+              }
+            }
+          },
+          "trades": 452,
+          "turnover": 939.6483685793689,
+          "win_rate": 0.16371681415929204
+        },
+        "test_end": "2026-09-09T00:00:00+00:00",
+        "test_start": "2025-07-28T16:00:00+00:00",
+        "train_end": "2025-07-28T16:00:00+00:00",
+        "train_grid": [
+          {
+            "train_sharpe": -2.386386904736787,
+            "train_trades": 2435,
+            "volatility_percentile": 0.9
+          },
+          {
+            "train_sharpe": -2.7723149986898754,
+            "train_trades": 2576,
+            "volatility_percentile": 0.95
+          },
+          {
+            "train_sharpe": -2.8108191286806283,
+            "train_trades": 2643,
+            "volatility_percentile": 0.975
+          }
+        ],
+        "train_start": "2019-12-31T00:00:00+00:00"
+      }
+    ],
+    "gates": {
+      "churn_free": true,
+      "max_drawdown": false,
+      "profit_factor": false,
+      "trade_count": true,
+      "turnover_target": false
+    },
+    "metrics": {
+      "deflated_sharpe": 1.554312234475219e-14,
+      "expectancy_r": -0.44269081728883364,
+      "exposure": 0.08818364702673213,
+      "max_drawdown": 2.8478250675707346,
+      "net_pnl": -295.4918099164854,
+      "pbo_permutation": 1.0,
+      "profit_factor": 0.30840874135827856,
+      "regime_attribution": {
+        "RANGE": {
+          "net_pnl": -25.165152989707565,
+          "sum_r": -61.4616315413349,
+          "trades": 94
+        },
+        "TREND": {
+          "net_pnl": -270.3266569267773,
+          "sum_r": -553.8786044901433,
+          "trades": 1296
+        }
+      },
+      "sharpe_ci_95": [
+        -7.297701106651486,
+        -4.284167596452926
+      ],
+      "sharpe_daily": -5.647103233579297,
+      "sortino_daily": -6.900415864773746,
+      "strategy_attribution": {
+        "band_rejection": {
+          "TREND": {
+            "gross_loss": 402.08827005253295,
+            "gross_profit": 131.7616131257553,
+            "net_pnl": -270.3266569267773,
+            "sum_r": -553.8786044901433,
+            "trades": 1296,
+            "wins": 199
+          }
+        },
+        "mean_reversion": {
+          "RANGE": {
+            "gross_loss": 25.17538636907701,
+            "gross_profit": 0.010233379369445149,
+            "net_pnl": -25.165152989707565,
+            "sum_r": -61.4616315413349,
+            "trades": 94,
+            "wins": 1
+          }
+        }
+      },
+      "trades": 1390,
+      "turnover": 2697.288460336224,
+      "win_rate": 0.14388489208633093
+    },
+    "name": "BTC 2019-2026 5m",
+    "oos_decisions": 83911,
+    "passed": false,
+    "selected_train_and_test_trades": 7281,
+    "start": "2019-12-31T00:00:00+00:00",
+    "symbols": 1
+  },
+  "diagnosis": "Edge-001 fails. Deep learned microstructure does not pass the gate. STOP: the AI layer is not authorized.",
+  "experiment": "edge-001",
+  "gate_verdict": "FAIL",
+  "materialization": {
+    "chunks": 3683,
+    "elapsed_seconds": 2376.6062388329883,
+    "files": 3683,
+    "files_per_second": 1.5496887704075475,
+    "output": "data/materialized/BTC_USDT_15m_features.parquet",
+    "rows": 241871,
+    "symbol": "BTC_USDT",
+    "ticks": 3630031122,
+    "ticks_per_second": 1527401.1582930519
+  },
+  "replays": {
+    "passed": true,
+    "sessions": [
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-08",
+        "minimum_daily_r": 0.0,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 0
+      },
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-16",
+        "minimum_daily_r": 0.0,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 0
+      },
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-22",
+        "minimum_daily_r": 0.0,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 0
+      },
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-27",
+        "minimum_daily_r": 0.0,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 0
+      },
+      {
+        "cooldown_violations": 0,
+        "counter_trend_entries": 0,
+        "date": "2026-10-29",
+        "minimum_daily_r": 0.0,
+        "passed": true,
+        "pre_cascade_entries": 0,
+        "trades": 0
+      }
+    ]
+  },
+  "stress": [
+    {
+      "max_drawdown": 0.007268812839096341,
+      "profit_factor": 0.0,
+      "sharpe": -2.0027453684852223,
+      "trades": 1,
+      "window": "2021-bear"
+    },
+    {
+      "max_drawdown": 0.0,
+      "profit_factor": 0.0,
+      "sharpe": 0.0,
+      "trades": 0,
+      "window": "2024-stress"
+    }
+  ],
+  "tick_sanity": {
+    "cvd_error": 4.354205884737894e-10,
+    "delta_error": 0.0,
+    "imbalance_error": 5.204170427930421e-18,
+    "passed": true,
+    "path": "/Volumes/WD My Passport 2626 Media/quant_data/data/tick_data/binance_futures/BTC_USDT/2026-11-02.parquet"
+  },
+  "track": {
+    "baselines": {
+      "buy_hold": 0.8632394452348167,
+      "ma_cross": -0.631547996137686,
+      "quant_only_ofi": -1.7335391043562043
+    },
+    "end": "2026-11-02T18:15:00+00:00",
+    "folds": [
+      {
+        "accuracy_flat_excluded": 0.5487386000236882,
+        "auc_flat_excluded": 0.5642360173548437,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "count": 0,
+            "empirical_up_rate": 0.0,
+            "mean_up_probability": 0.0
+          },
+          {
+            "bin": "0.2-0.4",
+            "count": 427,
+            "empirical_up_rate": 0.4426229508196721,
+            "mean_up_probability": 0.37020832404757664
+          },
+          {
+            "bin": "0.4-0.6",
+            "count": 16000,
+            "empirical_up_rate": 0.506375,
+            "mean_up_probability": 0.49626237581085664
+          },
+          {
+            "bin": "0.6-0.8",
+            "count": 448,
+            "empirical_up_rate": 0.5669642857142857,
+            "mean_up_probability": 0.6242752315795903
+          },
+          {
+            "bin": "0.8-1.0",
+            "count": 11,
+            "empirical_up_rate": 0.36363636363636365,
+            "mean_up_probability": 1.0
+          }
+        ],
+        "cooldown_violations": 0,
+        "feature_importances": [
+          {
+            "feature": "atr_pct",
+            "gain": 0.33967134881490024
+          },
+          {
+            "feature": "sweep_sell",
+            "gain": 0.24836037775698827
+          },
+          {
+            "feature": "sweep_buy",
+            "gain": 0.11436723099691133
+          },
+          {
+            "feature": "distance_ema9",
+            "gain": 0.04838275744630774
+          },
+          {
+            "feature": "distance_bb_mid",
+            "gain": 0.04140642424542978
+          },
+          {
+            "feature": "microprice_deviation_ewma",
+            "gain": 0.03150484517735465
+          },
+          {
+            "feature": "return_15m",
+            "gain": 0.031200746074097053
+          },
+          {
+            "feature": "dollar_volume_z",
+            "gain": 0.028193659728302334
+          },
+          {
+            "feature": "rsi3",
+            "gain": 0.0238434122590305
+          },
+          {
+            "feature": "return_1h",
+            "gain": 0.022567481700281215
+          }
+        ],
+        "flat_band": 0.0015,
+        "flat_excluded_rows": 16886,
+        "fold": 1,
+        "oof_macro_f1": 0.4847870042962568,
+        "probability_threshold": 0.4232125010320523,
+        "test": {
+          "deflated_sharpe": 0.0,
+          "expectancy_r": 0.0,
+          "exposure": 0.0,
+          "max_drawdown": 0.0,
+          "net_pnl": 0,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.0,
+          "regime_attribution": {},
+          "sharpe_ci_95": [
+            0.0,
+            0.0
+          ],
+          "sharpe_daily": 0.0,
+          "sortino_daily": 0.0,
+          "strategy_attribution": {},
+          "trades": 0,
+          "turnover": 0.0,
+          "win_rate": 0.0
+        },
+        "threshold_quantile": 0.6
+      },
+      {
+        "accuracy_flat_excluded": 0.5401257487994455,
+        "auc_flat_excluded": 0.5579833409050304,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "count": 118,
+            "empirical_up_rate": 0.5084745762711864,
+            "mean_up_probability": 0.0
+          },
+          {
+            "bin": "0.2-0.4",
+            "count": 465,
+            "empirical_up_rate": 0.44516129032258067,
+            "mean_up_probability": 0.3783589109004357
+          },
+          {
+            "bin": "0.4-0.6",
+            "count": 19257,
+            "empirical_up_rate": 0.5191358986342629,
+            "mean_up_probability": 0.4899458058687452
+          },
+          {
+            "bin": "0.6-0.8",
+            "count": 329,
+            "empirical_up_rate": 0.5927051671732523,
+            "mean_up_probability": 0.6372545471350999
+          },
+          {
+            "bin": "0.8-1.0",
+            "count": 30,
+            "empirical_up_rate": 0.6,
+            "mean_up_probability": 0.9951824316544553
+          }
+        ],
+        "cooldown_violations": 0,
+        "feature_importances": [
+          {
+            "feature": "atr_pct",
+            "gain": 0.495055934398671
+          },
+          {
+            "feature": "sweep_sell",
+            "gain": 0.1250117720631915
+          },
+          {
+            "feature": "sweep_buy",
+            "gain": 0.12340979582256512
+          },
+          {
+            "feature": "distance_ema9",
+            "gain": 0.06316237366636678
+          },
+          {
+            "feature": "return_15m",
+            "gain": 0.03274800910581647
+          },
+          {
+            "feature": "distance_bb_mid",
+            "gain": 0.031766507336573116
+          },
+          {
+            "feature": "microprice_deviation_ewma",
+            "gain": 0.02267574091458646
+          },
+          {
+            "feature": "cvd_slope_1h",
+            "gain": 0.020132774253947792
+          },
+          {
+            "feature": "rsi3",
+            "gain": 0.019639479358750073
+          },
+          {
+            "feature": "dollar_volume_z",
+            "gain": 0.018052739490123773
+          }
+        ],
+        "flat_band": 0.001,
+        "flat_excluded_rows": 20199,
+        "fold": 2,
+        "oof_macro_f1": 0.49346929742922363,
+        "probability_threshold": 0.44731366404863604,
+        "test": {
+          "deflated_sharpe": 0.0,
+          "expectancy_r": 0.0,
+          "exposure": 0.0,
+          "max_drawdown": 0.0,
+          "net_pnl": 0,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.0,
+          "regime_attribution": {},
+          "sharpe_ci_95": [
+            0.0,
+            0.0
+          ],
+          "sharpe_daily": 0.0,
+          "sortino_daily": 0.0,
+          "strategy_attribution": {},
+          "trades": 0,
+          "turnover": 0.0,
+          "win_rate": 0.0
+        },
+        "threshold_quantile": 0.6
+      },
+      {
+        "accuracy_flat_excluded": 0.5314832930031406,
+        "auc_flat_excluded": 0.544956555864465,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "count": 2,
+            "empirical_up_rate": 0.5,
+            "mean_up_probability": 0.0
+          },
+          {
+            "bin": "0.2-0.4",
+            "count": 528,
+            "empirical_up_rate": 0.4015151515151515,
+            "mean_up_probability": 0.3833747907074062
+          },
+          {
+            "bin": "0.4-0.6",
+            "count": 18016,
+            "empirical_up_rate": 0.5121003552397868,
+            "mean_up_probability": 0.4942332218715682
+          },
+          {
+            "bin": "0.6-0.8",
+            "count": 876,
+            "empirical_up_rate": 0.5445205479452054,
+            "mean_up_probability": 0.6305615973288188
+          },
+          {
+            "bin": "0.8-1.0",
+            "count": 1,
+            "empirical_up_rate": 0.0,
+            "mean_up_probability": 0.8187144019528072
+          }
+        ],
+        "cooldown_violations": 0,
+        "feature_importances": [
+          {
+            "feature": "atr_pct",
+            "gain": 0.5549821847633875
+          },
+          {
+            "feature": "sweep_buy",
+            "gain": 0.1251892242896518
+          },
+          {
+            "feature": "sweep_sell",
+            "gain": 0.11533391098880733
+          },
+          {
+            "feature": "distance_ema9",
+            "gain": 0.046891398837078456
+          },
+          {
+            "feature": "return_15m",
+            "gain": 0.031329401043580146
+          },
+          {
+            "feature": "distance_bb_mid",
+            "gain": 0.023496816977780385
+          },
+          {
+            "feature": "microprice_deviation_ewma",
+            "gain": 0.022905932471684636
+          },
+          {
+            "feature": "cvd_slope_1h",
+            "gain": 0.015392216474941097
+          },
+          {
+            "feature": "rsi3",
+            "gain": 0.014167906661895333
+          },
+          {
+            "feature": "dollar_volume_z",
+            "gain": 0.013690633291485609
+          }
+        ],
+        "flat_band": 0.0015,
+        "flat_excluded_rows": 19423,
+        "fold": 3,
+        "oof_macro_f1": 0.5231874322100009,
+        "probability_threshold": 0.4083325877087814,
+        "test": {
+          "deflated_sharpe": 0.0,
+          "expectancy_r": 0.0,
+          "exposure": 0.0,
+          "max_drawdown": 0.0,
+          "net_pnl": 0,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.0,
+          "regime_attribution": {},
+          "sharpe_ci_95": [
+            0.0,
+            0.0
+          ],
+          "sharpe_daily": 0.0,
+          "sortino_daily": 0.0,
+          "strategy_attribution": {},
+          "trades": 0,
+          "turnover": 0.0,
+          "win_rate": 0.0
+        },
+        "threshold_quantile": 0.6
+      },
+      {
+        "accuracy_flat_excluded": 0.5167228780213603,
+        "auc_flat_excluded": 0.5256847698515025,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "count": 65,
+            "empirical_up_rate": 0.6461538461538462,
+            "mean_up_probability": 0.0012636543502727894
+          },
+          {
+            "bin": "0.2-0.4",
+            "count": 135,
+            "empirical_up_rate": 0.48148148148148145,
+            "mean_up_probability": 0.3800401113408344
+          },
+          {
+            "bin": "0.4-0.6",
+            "count": 20833,
+            "empirical_up_rate": 0.5064561032976528,
+            "mean_up_probability": 0.5005629153630631
+          },
+          {
+            "bin": "0.6-0.8",
+            "count": 315,
+            "empirical_up_rate": 0.6317460317460317,
+            "mean_up_probability": 0.6235678860506241
+          },
+          {
+            "bin": "0.8-1.0",
+            "count": 0,
+            "empirical_up_rate": 0.0,
+            "mean_up_probability": 0.0
+          }
+        ],
+        "cooldown_violations": 0,
+        "feature_importances": [
+          {
+            "feature": "atr_pct",
+            "gain": 0.534120971839755
+          },
+          {
+            "feature": "sweep_buy",
+            "gain": 0.13244821049377198
+          },
+          {
+            "feature": "sweep_sell",
+            "gain": 0.12496264927484785
+          },
+          {
+            "feature": "distance_ema9",
+            "gain": 0.05870924263692031
+          },
+          {
+            "feature": "return_15m",
+            "gain": 0.028678777954952453
+          },
+          {
+            "feature": "distance_bb_mid",
+            "gain": 0.021133881476451892
+          },
+          {
+            "feature": "microprice_deviation_ewma",
+            "gain": 0.02023930943162056
+          },
+          {
+            "feature": "rsi3",
+            "gain": 0.015672536315665366
+          },
+          {
+            "feature": "dollar_volume_z",
+            "gain": 0.013324224895384328
+          },
+          {
+            "feature": "cvd_slope_1h",
+            "gain": 0.01191494311949111
+          }
+        ],
+        "flat_band": 0.001,
+        "flat_excluded_rows": 21348,
+        "fold": 4,
+        "oof_macro_f1": 0.5247489069833461,
+        "probability_threshold": 0.43858289660536753,
+        "test": {
+          "deflated_sharpe": 0.0,
+          "expectancy_r": 0.0,
+          "exposure": 0.0,
+          "max_drawdown": 0.0,
+          "net_pnl": 0,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.0,
+          "regime_attribution": {},
+          "sharpe_ci_95": [
+            0.0,
+            0.0
+          ],
+          "sharpe_daily": 0.0,
+          "sortino_daily": 0.0,
+          "strategy_attribution": {},
+          "trades": 0,
+          "turnover": 0.0,
+          "win_rate": 0.0
+        },
+        "threshold_quantile": 0.6
+      },
+      {
+        "accuracy_flat_excluded": 0.528110650688767,
+        "auc_flat_excluded": 0.5376667455507834,
+        "calibration": [
+          {
+            "bin": "0.0-0.2",
+            "count": 0,
+            "empirical_up_rate": 0.0,
+            "mean_up_probability": 0.0
+          },
+          {
+            "bin": "0.2-0.4",
+            "count": 219,
+            "empirical_up_rate": 0.5114155251141552,
+            "mean_up_probability": 0.3836715550760566
+          },
+          {
+            "bin": "0.4-0.6",
+            "count": 16866,
+            "empirical_up_rate": 0.4947824024665006,
+            "mean_up_probability": 0.5058646285125502
+          },
+          {
+            "bin": "0.6-0.8",
+            "count": 773,
+            "empirical_up_rate": 0.5459249676584734,
+            "mean_up_probability": 0.6289022809138185
+          },
+          {
+            "bin": "0.8-1.0",
+            "count": 0,
+            "empirical_up_rate": 0.0,
+            "mean_up_probability": 0.0
+          }
+        ],
+        "cooldown_violations": 0,
+        "feature_importances": [
+          {
+            "feature": "atr_pct",
+            "gain": 0.5479212196811544
+          },
+          {
+            "feature": "sweep_buy",
+            "gain": 0.14451987813547046
+          },
+          {
+            "feature": "sweep_sell",
+            "gain": 0.13123183344504952
+          },
+          {
+            "feature": "distance_ema9",
+            "gain": 0.04020851659967742
+          },
+          {
+            "feature": "return_15m",
+            "gain": 0.029618963410635104
+          },
+          {
+            "feature": "microprice_deviation_ewma",
+            "gain": 0.021039155800027087
+          },
+          {
+            "feature": "distance_bb_mid",
+            "gain": 0.018107798887071185
+          },
+          {
+            "feature": "rsi3",
+            "gain": 0.012701489412687533
+          },
+          {
+            "feature": "cvd_slope_1h",
+            "gain": 0.012027139047794785
+          },
+          {
+            "feature": "dollar_volume_z",
+            "gain": 0.010025902675665135
+          }
+        ],
+        "flat_band": 0.0015,
+        "flat_excluded_rows": 17858,
+        "fold": 5,
+        "oof_macro_f1": 0.5218629696995878,
+        "probability_threshold": 0.3839020061783842,
+        "test": {
+          "deflated_sharpe": 0.0,
+          "expectancy_r": 0.0,
+          "exposure": 0.0,
+          "max_drawdown": 0.0,
+          "net_pnl": 0,
+          "pbo_permutation": 1.0,
+          "profit_factor": 0.0,
+          "regime_attribution": {},
+          "sharpe_ci_95": [
+            0.0,
+            0.0
+          ],
+          "sharpe_daily": 0.0,
+          "sortino_daily": 0.0,
+          "strategy_attribution": {},
+          "trades": 0,
+          "turnover": 0.0,
+          "win_rate": 0.0
+        },
+        "threshold_quantile": 0.6
+      }
+    ],
+    "gates": {
+      "beats_buy_hold_sharpe": false,
+      "churn_free": true,
+      "expectancy_r": false,
+      "max_drawdown": true,
+      "profit_factor": false,
+      "trade_count": false
+    },
+    "metrics": {
+      "deflated_sharpe": 0.0,
+      "expectancy_r": 0.0,
+      "exposure": 0.0,
+      "max_drawdown": 0.0,
+      "net_pnl": 0,
+      "pbo_permutation": 1.0,
+      "profit_factor": 0.0,
+      "regime_attribution": {},
+      "sharpe_ci_95": [
+        0.0,
+        0.0
+      ],
+      "sharpe_daily": 0.0,
+      "sortino_daily": 0.0,
+      "strategy_attribution": {},
+      "trades": 0,
+      "turnover": 0.0,
+      "win_rate": 0.0
+    },
+    "name": "BTC deep ticks 2019-2026",
+    "passed": false,
+    "start": "2019-12-31T00:15:00+00:00"
+  }
+}

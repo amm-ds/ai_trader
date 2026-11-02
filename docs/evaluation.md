@@ -33,3 +33,8 @@ Flow-002 trains one model per fold on pooled symbols, labels 1h forward returns
 into down/flat/up with a ±0.1% noise band, and selects probability thresholds by
 train macro-F1. Reports include flat-excluded accuracy/AUC, gain importance,
 calibration bins, and the same trading/safety gates. See `experiments/flow-002/`.
+
+Edge-001 uses daily materialized BTC ticks, five outer folds with one-day embargo,
+three purged inner OOF models for isotonic calibration, and a mandatory
+`(2p−1)·E|1h move| > 0.0022` cost gate. Reports add buy-and-hold, MA-cross, OFI
+quant-only, 2021-bear, and 2024-stress comparisons. See `experiments/edge-001/`.

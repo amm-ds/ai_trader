@@ -12,4 +12,5 @@ dist/
 .env
 *.local.json
 analysis/data/state/
+data/materialized/
 .DS_Store
