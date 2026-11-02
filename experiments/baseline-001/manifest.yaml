@@ -1,0 +1,23 @@
+experiment: baseline-001
+parent: null
+single_structural_change: none
+phase: P1
+seed: 20261031
+strategies: [band_rejection, momentum, mean_reversion]
+router: deterministic_regime_ensemble
+structural_exits: false
+regime_grid_volatility_percentile: [0.9, 0.95, 0.975]
+walk_forward:
+  folds: 3
+  scheme: expanding_train_next_sixth_test
+costs:
+  fee_round_trip_bps: 12
+  slippage_bps_per_fill: 5
+risk:
+  fraction_per_trade: 0.02
+  daily_loss_limit_r: -3
+  evening_bell_utc: 19
+lightgbm: skipped_install_timeout
+sources:
+  btc_5m_parquet: /Users/alejandro/work/trading_bots_crypto/data/datasets/btc_5m_full.parquet
+  desk_archive: /Users/alejandro/work/trading-desk/analysis/data

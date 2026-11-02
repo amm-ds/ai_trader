@@ -1,0 +1,12 @@
+{
+  "name": "oct-27-cascade-session",
+  "session_date": "2026-10-27",
+  "symbols": ["BTC_USDT", "ETH_USDT", "SOL_USDT"],
+  "initial_equity": 100.0,
+  "expected": {
+    "min_daily_r": -3.0,
+    "zero_counter_trend_entries": true,
+    "zero_cooldown_violations": true,
+    "no_entries_before_15m_cascade": true
+  }
+}

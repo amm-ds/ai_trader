@@ -1,0 +1,21 @@
+experiment: flow-001
+phase: P2a
+parents: [baseline-001, baseline-002, baseline-003]
+pivot: price_action_to_flow_first_structure_triggered_entries
+seed: 20261101
+execution_timeframe: 15m
+band_role: regime_and_structure_only_no_band_entries
+strategies: [spring_reversal, flow_continuation]
+exits: structural_stop_1r_breakeven_3atr_chandelier_15m
+grid:
+  absorption_log_odds: [1.0, 2.0, 3.0]
+  cvd_slope_quantile: [0.6, 0.75, 0.9]
+walk_forward:
+  folds: 3
+  selection: train_daily_sharpe_only
+costs:
+  fee_round_trip_bps: 12
+  slippage_bps_per_fill: 5
+sources:
+  desk_archive: /Users/alejandro/work/trading-desk/analysis/data
+  tick_sanity: /Volumes/WD My Passport 2626 Media/orderflow_lake/demo/data/tick_data_live/binance_futures/BTC_USDT/2026-08-05.parquet

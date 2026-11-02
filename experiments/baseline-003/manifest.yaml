@@ -1,0 +1,28 @@
+experiment: baseline-003
+parent: baseline-002
+ancestors: [baseline-001, baseline-002]
+single_structural_change_set: 15m_execution_band_only_trend_1r_breakeven_3atr_chandelier_swing
+phase: P1
+seed: 20261031
+strategies: [band_rejection, mean_reversion]
+router: deterministic_regime_ensemble
+execution_timeframe: 15m
+structural_exits: true
+swing_exits: true
+momentum_removed_as_toxic: true
+turnover_target_btc: 100x
+regime_grid_volatility_percentile: [0.9, 0.95, 0.975]
+walk_forward:
+  folds: 3
+  scheme: expanding_train_next_sixth_test
+costs:
+  fee_round_trip_bps: 12
+  slippage_bps_per_fill: 5
+risk:
+  fraction_per_trade: 0.02
+  daily_loss_limit_r: -3
+  evening_bell_utc: 19
+lightgbm: skipped_install_timeout
+sources:
+  btc_5m_parquet: /Users/alejandro/work/trading_bots_crypto/data/datasets/btc_5m_full.parquet
+  desk_archive: /Users/alejandro/work/trading-desk/analysis/data
