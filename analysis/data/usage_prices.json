@@ -1,0 +1,16 @@
+{
+  "*": {
+    "cache_read_usd_per_mtok": 0.15,
+    "cache_write_usd_per_mtok": 0.6,
+    "input_usd_per_mtok": 0.6,
+    "note": "ESTIMATE — fallback applied to any model without a more specific prefix entry. Verify real rates at https://platform.moonshot.ai/docs/pricing/chat and set per-model entries. Never treat these numbers as verified.",
+    "output_usd_per_mtok": 2.5
+  },
+  "kimi-k2.6": {
+    "cache_read_usd_per_mtok": 0.15,
+    "cache_write_usd_per_mtok": 0.6,
+    "input_usd_per_mtok": 0.6,
+    "note": "ESTIMATE — kimi-k2.6 pay-as-you-go placeholder; verify at platform.moonshot.ai before trusting any USD figure derived from it. K2-series lists separate cache pricing; these are conservative placeholders, NOT verified rates.",
+    "output_usd_per_mtok": 2.5
+  }
+}
