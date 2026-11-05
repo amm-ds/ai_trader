@@ -97,6 +97,12 @@ def resolve_model() -> str:
     return os.environ.get("KIMI_MODEL") or load_env_file().get("KIMI_MODEL") or DEFAULT_MODEL
 
 
+def resolve_base_url() -> str:
+    """Base URL from the environment, then `.env`, then the Moonshot default."""
+
+    return os.environ.get("KIMI_BASE_URL") or load_env_file().get("KIMI_BASE_URL") or BASE_URL
+
+
 def context_hash(context: dict[str, Any]) -> str:
     """Canonical content hash; independent of dict insertion order."""
 
@@ -226,10 +232,12 @@ def parse_proposal(
     confidence = value["confidence"]
     if isinstance(confidence, bool) or not isinstance(confidence, (int, float)) or not 0 <= confidence <= 1:
         raise ValueError("invalid confidence")
-    if not isinstance(value["rationale"], str) or len(value["rationale"]) > 200:
-        raise ValueError("invalid rationale")
-    if not isinstance(value["uncertainty"], str) or len(value["uncertainty"]) > 100:
-        raise ValueError("invalid uncertainty")
+    if not isinstance(value["rationale"], str) or not isinstance(value["uncertainty"], str):
+        raise ValueError("invalid rationale/uncertainty")
+    # The reasoning model often writes slightly over the advertised limits;
+    # truncate instead of rejecting so near-valid JSON is not forced to retry.
+    rationale = value["rationale"][:200]
+    uncertainty = value["uncertainty"][:100]
     entry, stop, tp = (_optional_price(value[key]) for key in ("entry", "stop", "tp"))
     if action == "flat":
         entry = stop = tp = None
@@ -241,8 +249,8 @@ def parse_proposal(
         stop=stop,
         tp=tp,
         confidence=float(confidence),
-        rationale=value["rationale"],
-        uncertainty=value["uncertainty"],
+        rationale=rationale,
+        uncertainty=uncertainty,
         model=model,
         fallback=False,
         latency_s=latency_s,
@@ -269,14 +277,14 @@ class KimiClient:
     def __init__(
         self,
         model: str | None = None,
-        base_url: str = BASE_URL,
+        base_url: str | None = None,
         timeout_s: float = DEFAULT_TIMEOUT_S,
         cache: DecisionCache | None = None,
         ledger: CallLedger | None = None,
         max_attempts: int = MAX_ATTEMPTS,
     ) -> None:
         self.model = model or resolve_model()
-        self.base_url = base_url.rstrip("/")
+        self.base_url = (base_url or resolve_base_url()).rstrip("/")
         self.timeout_s = timeout_s
         self.cache = cache
         self.ledger = ledger or CallLedger()
@@ -416,8 +424,12 @@ class KimiClient:
         payload = {
             "model": self.model,
             "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0,
-            "max_tokens": 600,
+            # kimi-for-coding (K2.8 preview) accepts only temperature 1; the
+            # deterministic cache plus the sensitivity spot-check bound variance.
+            "temperature": 1,
+            # reasoning tokens count against max_tokens; 600 truncated the
+            # reasoning phase and returned empty content (observed 2026-11-04)
+            "max_tokens": 4096,
         }
         last_error = ""
         for attempt in range(self.max_attempts):
@@ -458,6 +470,8 @@ class KimiClient:
             headers={
                 "Content-Type": "application/json",
                 "Authorization": f"Bearer {self._key}",
+                # the coding endpoint 403s (error 1010) the default urllib UA
+                "User-Agent": "ai-trader-kimi-001/0.1",
             },
             method="POST",
         )

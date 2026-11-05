@@ -61,6 +61,8 @@ STRESS_WINDOWS = (
     ("2021-bear", datetime(2021, 5, 1, tzinfo=UTC), datetime(2021, 7, 31, tzinfo=UTC)),
     ("2024-stress", datetime(2024, 1, 1, tzinfo=UTC), datetime(2024, 3, 31, tzinfo=UTC)),
 )
+DEFAULT_MODEL_FOR_MANIFEST = "kimi-k2.6"
+DEFAULT_BASE_FOR_MANIFEST = "https://api.moonshot.ai/v1"
 REPO_ROOT = Path(__file__).resolve().parents[3]
 STATE_DIR = REPO_ROOT / "analysis" / "data" / "state" / "kimi-001"
 
@@ -576,13 +578,17 @@ def summarize_trades(
 
 
 def write_manifest(output: Path, snapshot_count: int) -> None:
+    from ai_trader.agents.kimi_api import resolve_base_url, resolve_model
+
     output.mkdir(parents=True, exist_ok=True)
     (output / "manifest.yaml").write_text(
         f"""experiment: kimi-001
 question: does a frontier LLM improve trading metrics net of all costs
 parent: edge-001
-model: kimi-k2.6
-model_source: env KIMI_MODEL (default kimi-k2.6)
+model: {resolve_model()}
+base_url: {resolve_base_url()}
+model_source: env KIMI_MODEL (default {DEFAULT_MODEL_FOR_MANIFEST})
+base_url_source: env KIMI_BASE_URL (default {DEFAULT_BASE_FOR_MANIFEST})
 key: repo .env only (gitignored, chmod 600); never printed, logged, or committed
 arms:
   A: quant-only edge-001 (null baseline; expected zero trades)
@@ -781,10 +787,19 @@ def build_results(output: Path, frame: pd.DataFrame, cache: DecisionCache, clien
         "baselines": {"buy_hold_sharpe_daily": buy_hold},
         "replays": replays,
         "sensitivity": sensitivity,
+        "base_tokens": _tokens_for_version(cache, client.model, PROMPT_VERSION),
         "verdict": "YES" if verdict_pass else "NO",
         "verdict_rule": "B beats A and buy-and-hold on net-after-everything Sharpe, PF>1.3, maxDD<20% on backtest OOS, and no behavioral breach in replays",
         "replays_passed": replays_passed,
     }
+
+
+def _tokens_for_version(cache: DecisionCache, model: str, version: str) -> int:
+    return sum(
+        int(row["usage"]["prompt_tokens"]) + int(row["usage"]["completion_tokens"])
+        for row in cache._rows.values()
+        if row["model"] == model and row["prompt_version"] == version
+    )
 
 
 def _token_usd_for_version(cache: DecisionCache, model: str, version: str) -> float:
@@ -850,7 +865,7 @@ def render_report(results: dict[str, Any]) -> str:
     lines.extend([
         "",
         f"Buy-and-hold daily Sharpe over the same OOS folds: {results['baselines']['buy_hold_sharpe_daily']:.4f}.",
-        f"Tokens per arm-B decision: {usage['tokens'] / arm_b['decisions'] if arm_b['decisions'] else 0:.1f}.",
+        f"Tokens per arm-B decision (base prompt): {results['base_tokens'] / arm_b['decisions'] if arm_b['decisions'] else 0:.1f}.",
         "",
         "### Arm B proposal accounting",
         "",

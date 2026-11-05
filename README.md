@@ -41,6 +41,8 @@ Final learned experiment [flow-002](experiments/flow-002/report.md) uses native 
 
 Deep-data [edge-001](experiments/edge-001/report.md) materializes 3,683 BTC files (3.63B ticks, 241,871 bars) and uses purged OOF isotonic LightGBM. AUC is 0.526–0.564, but probability plus cost gates produce **zero OOS trades**. Buy-and-hold Sharpe is 0.863 versus 0.000 for edge-001. Tick sanity and all disaster replays pass, but the overall gate is **FAIL**; the AI layer is not authorized. ETH/SOL remain pending.
 
+Semantic-layer [kimi-001](experiments/kimi-001/report.md) let a frontier LLM (Kimi K2.8 preview, `kimi-for-coding`) *propose* entries that the unchanged sovereign governor had to validate mechanically. On 400 frozen OOS contexts from edge-001's folds (RANGE/TRANSITION strata), arm B took 11 trades: 18.18% WR, −0.5594 E[R], PF 0.163, Sharpe −1.0658, max DD 12.59%, −$15.04 net after fees, slippage, and $2.73 of tokens (4,813 tokens/decision at estimate-marked prices). The LLM stayed flat 387/400 times and was vetoed twice more by the evening bell. All seven disaster replays passed behaviorally (five Oct-2026 sessions, 2021-bear, 2024-stress) and 5/5 prompt-sensitivity re-asks were stable. The preregistered verdict is **NO**: the governor kept the LLM contained, but contained losses are still losses.
+
 ## Quickstart
 
 ```bash

@@ -1,8 +1,10 @@
 experiment: kimi-001
 question: does a frontier LLM improve trading metrics net of all costs
 parent: edge-001
-model: kimi-k2.6
+model: kimi-for-coding
+base_url: https://api.kimi.ai/coding/v1
 model_source: env KIMI_MODEL (default kimi-k2.6)
+base_url_source: env KIMI_BASE_URL (default https://api.moonshot.ai/v1)
 key: repo .env only (gitignored, chmod 600); never printed, logged, or committed
 arms:
   A: quant-only edge-001 (null baseline; expected zero trades)

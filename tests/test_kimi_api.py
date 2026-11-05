@@ -146,6 +146,35 @@ def test_cache_makes_replays_deterministic(tmp_path: Path) -> None:
     assert three.latency_s == 0.0
 
 
+def test_base_url_env_override_reaches_request(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:
+    monkeypatch.setenv("KIMI_API_KEY", "test-key")
+    monkeypatch.setenv("KIMI_BASE_URL", "https://example.test/coding/v1")
+    seen: dict[str, str] = {}
+
+    class FakeResponse:
+        def __enter__(self) -> FakeResponse:
+            return self
+
+        def __exit__(self, *args: object) -> None:
+            return None
+
+        def read(self) -> bytes:
+            return json.dumps(GOOD).encode()
+
+    def fake_urlopen(request: object, timeout: float = 0.0) -> FakeResponse:
+        req = request
+        seen["url"] = req.full_url  # type: ignore[attr-defined]
+        seen["auth"] = req.get_header("Authorization")  # type: ignore[attr-defined]
+        return FakeResponse()
+
+    monkeypatch.setattr(kimi_api, "urlopen", fake_urlopen)
+    client = KimiClient(model="kimi-for-coding", ledger=CallLedger(tmp_path / "ledger.json"))
+    decision = client.propose(CONTEXT)
+    assert decision.action == "long"
+    assert seen["url"] == "https://example.test/coding/v1/chat/completions"
+    assert seen["auth"] == "Bearer test-key"
+
+
 def test_daily_cap_blocks_and_resets(tmp_path: Path) -> None:
     ledger = CallLedger(tmp_path / "ledger.json", cap=2)
     ledger.record(2)
